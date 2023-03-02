@@ -4,3 +4,4 @@ package-lock.json
 ehthumbs.db
 Thumbs.db
 *.swp
+dist
