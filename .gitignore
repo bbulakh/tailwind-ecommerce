@@ -1,0 +1,6 @@
+node_modules/
+.npmrc
+package-lock.json
+ehthumbs.db
+Thumbs.db
+*.swp
