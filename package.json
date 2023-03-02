@@ -1,6 +1,7 @@
 {
     "devDependencies": {
         "@tailwindcss/aspect-ratio": "^0.4.2",
+        "gulp": "^4.0.2",
         "install": "^0.13.0",
         "npm": "^9.5.0",
         "prettier": "^2.8.4",
