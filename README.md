@@ -2,7 +2,7 @@
 
 Simple online furniture store webpage made by using TailwindCSS
 
-<img src="./assets/images/main-page-screenshot.png">
+<img width=350px  src="./assets/images/main-page-screenshot.png">
 
 ### About project:
 
