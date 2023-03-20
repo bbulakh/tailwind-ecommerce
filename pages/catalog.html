@@ -18,10 +18,10 @@
   <body>
     <!-- Header -->
     <header
-      class="mx-auto flex max-w-[1200px] items-center justify-between pr-10"
+      class="mx-auto flex h-16 max-w-[1200px] items-center justify-between pr-10"
     >
       <img
-        class="cursor-pointer sm:h-auto sm:w-auto"
+        class="ml-5 cursor-pointer sm:h-auto sm:w-auto"
         src="/assets/images/company-logo.svg"
         alt="company logo"
       />
@@ -43,12 +43,14 @@
         </svg>
 
         <input
-          class="hidden outline-none md:block"
+          class="hidden w-11/12 outline-none md:block"
           type="search"
           placeholder="Search"
         />
 
-        <button class="ml-auto h-full bg-yellow-400 px-4">Search</button>
+        <button class="ml-auto h-full bg-yellow-400 px-4 hover:bg-yellow-300">
+          Search
+        </button>
       </div>
 
       <div class="hidden gap-3 md:!flex">
@@ -129,7 +131,7 @@
         class="mx-auto hidden h-12 w-full max-w-[1200px] items-center md:flex"
       >
         <div
-          class="ml-10 flex h-full w-40 cursor-pointer items-center justify-center bg-yellow-500"
+          class="ml-5 flex h-full w-40 cursor-pointer items-center justify-center bg-yellow-500"
         >
           <a class="flex justify-around" href="#">
             <svg
@@ -151,15 +153,35 @@
           </a>
         </div>
 
-        <div class="mx-16 flex gap-4">
-          <a class="font-light text-white" href="#">Home</a>
-          <a class="font-light text-white" href="#">Shop</a>
-          <a class="font-light text-white" href="#">About Us</a>
-          <a class="font-light text-white" href="#">Contact Us</a>
+        <div class="mx-7 flex gap-8">
+          <a
+            class="font-light text-white duration-100 hover:text-yellow-400 hover:underline"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="font-light text-white duration-100 hover:text-yellow-400 hover:underline"
+            href="#"
+            >Shop</a
+          >
+          <a
+            class="font-light text-white duration-100 hover:text-yellow-400 hover:underline"
+            href="#"
+            >About Us</a
+          >
+          <a
+            class="font-light text-white duration-100 hover:text-yellow-400 hover:underline"
+            href="#"
+            >Contact Us</a
+          >
         </div>
 
         <div class="ml-auto px-10">
-          <a class="text-light text-white" href="#">Login</a>
+          <a
+            class="font-light text-white duration-100 hover:text-yellow-400 hover:underline"
+            href="#"
+            >Login</a
+          >
         </div>
       </div>
     </nav>
@@ -318,29 +340,29 @@
 
             <div class="flex gap-2">
               <div
-                class="flex h-8 w-8 cursor-pointer items-center justify-center border focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
+                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
               >
                 XS
               </div>
               <div
-                class="flex h-8 w-8 cursor-pointer items-center justify-center border focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
+                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
               >
                 S
               </div>
               <div
-                class="flex h-8 w-8 cursor-pointer items-center justify-center border focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
+                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
               >
                 M
               </div>
 
               <div
-                class="flex h-8 w-8 cursor-pointer items-center justify-center border focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
+                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
               >
                 L
               </div>
 
               <div
-                class="flex h-8 w-8 cursor-pointer items-center justify-center border focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
+                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500"
               >
                 XL
               </div>
@@ -1016,11 +1038,11 @@
     <!-- Desktop Footer  -->
 
     <footer
-      class="mx-auto hidden w-full max-w-[1200px] justify-around border-t pb-10 lg:flex"
+      class="mx-auto hidden w-full max-w-[1200px] justify-between border-t pb-10 lg:flex"
     >
-      <div>
+      <div class="ml-5">
         <img
-          class="mt-10 -ml-8"
+          class="mt-10 mb-5"
           src="/assets/images/company-logo.svg"
           alt="company logo"
         />
@@ -1052,44 +1074,46 @@
         </div>
       </div>
 
-      <div class="mx-5 mt-14">
-        <p class="font-medium text-gray-500">FEATURES</p>
-        <ul class="text-sm leading-8">
-          <li>Marketing</li>
-          <li>Commerce</li>
-          <li>Analytics</li>
-          <li>Merchendise</li>
-        </ul>
-      </div>
+      <div class="flex gap-6">
+        <div class="mx-5 mt-10">
+          <p class="font-medium text-gray-500">FEATURES</p>
+          <ul class="text-sm leading-8">
+            <li>Marketing</li>
+            <li>Commerce</li>
+            <li>Analytics</li>
+            <li>Merchendise</li>
+          </ul>
+        </div>
 
-      <div class="mx-5 mt-14">
-        <p class="font-medium text-gray-500">SUPPORT</p>
-        <ul class="text-sm leading-8">
-          <li>Pricing</li>
-          <li>Docs</li>
-          <li>Audition</li>
-          <li>Art Status</li>
-        </ul>
-      </div>
+        <div class="mx-5 mt-10">
+          <p class="font-medium text-gray-500">SUPPORT</p>
+          <ul class="text-sm leading-8">
+            <li>Pricing</li>
+            <li>Docs</li>
+            <li>Audition</li>
+            <li>Art Status</li>
+          </ul>
+        </div>
 
-      <div class="mx-5 mt-14">
-        <p class="font-medium text-gray-500">FEATURES</p>
-        <ul class="text-sm leading-8">
-          <li>Marketing</li>
-          <li>Commerce</li>
-          <li>Analytics</li>
-          <li>Merchendise</li>
-        </ul>
-      </div>
+        <div class="mx-5 mt-10">
+          <p class="font-medium text-gray-500">FEATURES</p>
+          <ul class="text-sm leading-8">
+            <li>Marketing</li>
+            <li>Commerce</li>
+            <li>Analytics</li>
+            <li>Merchendise</li>
+          </ul>
+        </div>
 
-      <div class="mx-5 mt-14">
-        <p class="font-medium text-gray-500">FEATURES</p>
-        <ul class="text-sm leading-8">
-          <li>Marketing</li>
-          <li>Commerce</li>
-          <li>Analytics</li>
-          <li>Merchendise</li>
-        </ul>
+        <div class="mx-5 mt-10">
+          <p class="font-medium text-gray-500">FEATURES</p>
+          <ul class="text-sm leading-8">
+            <li>Marketing</li>
+            <li>Commerce</li>
+            <li>Analytics</li>
+            <li>Merchendise</li>
+          </ul>
+        </div>
       </div>
     </footer>
 
