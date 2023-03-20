@@ -2,6 +2,8 @@
 
 Simple online furniture store webpage made by using TailwindCSS
 
+### Pages Preview:
+
 <details open="true"><summary><strong>Homepage</strong></summary>
 <img width="350px" src="./assets/images/main-page-screenshot.png" alt="Homepage">
 </details>
