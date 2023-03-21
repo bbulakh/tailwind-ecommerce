@@ -18,15 +18,21 @@
   <body>
     <!-- Header -->
     <header
-      class="mx-auto flex h-16 max-w-[1200px] items-center justify-between pr-10"
+      class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5"
     >
       <img
-        class="ml-5 cursor-pointer sm:h-auto sm:w-auto"
+        class="cursor-pointer sm:h-auto sm:w-auto"
         src="/assets/images/company-logo.svg"
         alt="company logo"
       />
 
-      <div class="flex h-9 w-2/5 items-center border">
+      <div class="md:hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </div>
+
+      <div class="md:flex h-9 w-2/5 items-center border hidden">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -176,7 +182,7 @@
           >
         </div>
 
-        <div class="ml-auto px-10">
+        <div class="ml-auto px-5">
           <a
             class="font-light text-white duration-100 hover:text-yellow-400 hover:underline"
             href="#"
@@ -189,7 +195,7 @@
 
     <!-- breadcrumbs  -->
 
-    <nav class="mx-auto mt-4 max-w-[1200px] px-4">
+    <nav class="mx-auto mt-4 max-w-[1200px] px-5">
       <ul class="flex items-center">
         <li class="cursor-pointer">
           <svg
