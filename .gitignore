@@ -5,4 +5,5 @@ ehthumbs.db
 Thumbs.db
 *.swp
 dist
+.DS_store
 
