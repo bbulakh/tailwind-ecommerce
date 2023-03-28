@@ -8,11 +8,11 @@ Simple online furniture store webpage made by using TailwindCSS
 <img width="350px" src="./assets/images/main-page-screenshot.png" alt="Homepage">
 </details>
 
-<details open="true"><summary><strong>Catalog</strong></summary>
+<details><summary><strong>Catalog</strong></summary>
 <img width="350px" src="assets/images/catalog-screenshot.png" alt="Catalog">
 </details>
 
-<details open="true"><summary><strong>Product overview</strong></summary>
+<details><summary><strong>Product overview</strong></summary>
 <img width="350px" src="assets/images/product-overview-screenshot.png" alt="Product overview">
 </details>
   
