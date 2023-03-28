@@ -4,6 +4,5 @@ package-lock.json
 ehthumbs.db
 Thumbs.db
 *.swp
-dist
+public
 .DS_store
-
