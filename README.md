@@ -5,15 +5,15 @@ Simple online furniture store webpage made by using TailwindCSS
 ### Pages Preview:
 
 <details open="true"><summary><strong>Homepage</strong></summary>
-<img width="350px" src="./assets/images/main-page-screenshot.png" alt="Homepage">
+<img width="350px" src="/src/assets/images/main-page-screenshot.png" alt="Homepage">
 </details>
 
 <details><summary><strong>Catalog</strong></summary>
-<img width="350px" src="assets/images/catalog-screenshot.png" alt="Catalog">
+<img width="350px" src="/src/assets/images/catalog-screenshot.png" alt="Catalog">
 </details>
 
 <details><summary><strong>Product overview</strong></summary>
-<img width="350px" src="assets/images/product-overview-screenshot.png" alt="Product overview">
+<img width="350px" src="/src/assets/images/product-overview-screenshot.png" alt="Product overview">
 </details>
   
 ### About project:
