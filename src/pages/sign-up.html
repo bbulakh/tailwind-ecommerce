@@ -214,7 +214,7 @@
           <p>Register for new customer</p>
         </div>
 
-        <div class="mt-6 flex flex-col">
+        <form class="mt-6 flex flex-col">
           <label for="name">Full Name</label>
           <input
             class="mb-3 mt-3 border px-4 py-2"
@@ -242,16 +242,16 @@
             type="password"
             placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
           />
-        </div>
+        </form>
 
         <div class="mt-4 flex justify-between">
-          <div class="flex gap-2">
+          <form class="flex gap-2">
             <input type="checkbox" name="" id="" />
-            <p>
+            <label for="checkbox">
               I have read and agree with
               <a href="#" class="text-blue-900">terms &amp; conditions</a>
-            </p>
-          </div>
+            </label>
+          </form>
         </div>
 
         <button class="my-5 w-full bg-blue-900 py-2 text-white">
@@ -261,8 +261,8 @@
         <p class="text-center text-gray-500">OR SIGN UP WITH</p>
 
         <div class="my-5 flex gap-2">
-          <button class="w-1/2 bg-blue-600 py-2">FACEBOOK</button>
-          <button class="w-1/2 bg-yellow-500 py-2">GOOGLE</button>
+          <button class="w-1/2 py-2 text-white bg-blue-800">FACEBOOK</button>
+          <button class="w-1/2 py-2 text-white bg-orange-500">GOOGLE</button>
         </div>
 
         <p class="text-center">
