@@ -17,13 +17,23 @@ task("tailwind", function (cb) {
   });
 });
 
+task("prettier", function (cb) {
+  const command = "npx prettier --write src/pages/*.html";
+  exec(command, function (err, stdout, stderr) {
+    console.log(stdout);
+    console.log(stderr);
+    cb(err);
+  });
+});
+
 task("build-pages", function () {
   return src("./src/pages/*.html").pipe(dest("./public/"));
 });
 
-task('build-images', function() {
-  return src('./src/assets/images/*.{png,svg,ico}')
-    .pipe(dest('./public/assets/images/'));
+task("build-images", function () {
+  return src("./src/assets/images/*.{png,svg,ico}").pipe(
+    dest("./public/assets/images/")
+  );
 });
 
 task("build-css-version", function () {
@@ -48,6 +58,7 @@ task(
   "default",
   series(
     "tailwind",
+    "prettier",
     "build-pages",
     "build-images",
     "build-css-version",
