@@ -17,7 +17,7 @@ task("tailwind", function (cb) {
   });
 });
 
-task("prettier", function (cb) {
+task("pretty", function (cb) {
   const command = "npx prettier --write src/pages/*.html";
   exec(command, function (err, stdout, stderr) {
     console.log(stdout);
@@ -58,7 +58,17 @@ task(
   "default",
   series(
     "tailwind",
-    "prettier",
+    "build-pages",
+    "build-images",
+    "build-css-version",
+    "build-html-updates"
+  )
+);
+
+task(
+  "build",
+  series(
+    "tailwind",
     "build-pages",
     "build-images",
     "build-css-version",
