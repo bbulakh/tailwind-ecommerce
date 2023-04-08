@@ -8,6 +8,10 @@
     "md5-file": "^5.0.0",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
+    "gulp-csso": "^4.0.1",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-imagemin": "7.1.0",
+    "gulp-tinypng-compress": "^1.2.5",
     "tailwindcss": "^3.2.7"
   },
   "dependencies": {
