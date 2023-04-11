@@ -31,7 +31,7 @@ task("build-pages", function () {
 });
 
 task("build-images", function () {
-  return src("./src/assets/images/*.{png,svg,ico}").pipe(
+  return src("./src/assets/images/*.{png,svg,ico,jpg}").pipe(
     dest("./public/assets/images/")
   );
 });
