@@ -20,12 +20,10 @@ Simple online furniture store webpage made by using TailwindCSS
 <img width="350px" src="/src/assets/images/account-page-screenshot.png" alt="Product overview">
 </details>
 
-<details><summary><strong>Whishlist</strong></summary>
-<img width="350px" src="/src/assets/images/whishlist-screenshot.png" alt="Product overview">
+<details><summary><strong>Wishlist</strong></summary>
+<img width="350px" src="/src/assets/images/Wishlist-screenshot.png" alt="Product overview">
 </details>
 
-
-  
 ### About project:
 
 Project includes 3 pages of ecommerce shop: main page, product overview and a catalog
