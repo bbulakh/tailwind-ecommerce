@@ -459,8 +459,7 @@
           <div class="w-full"></div>
           <form class="flex w-full flex-col gap-3" action="">
             <div class="flex w-full flex-col">
-              <label class="flex" for="name"
-                >Payment Card Number</label>
+              <label class="flex" for="name">Payment Card Number</label>
               <input
                 class="w-full border px-4 py-2 lg:w-1/2"
                 type="text"
@@ -469,76 +468,95 @@
             </div>
 
             <div class="flex w-full flex-col">
-                <label class="flex" for="name"
-                  >Card Holder</label>
-                <input
-                  class="w-full border px-4 py-2 lg:w-1/2"
-                  type="text"
-                  placeholder="SARAH JOHNSON"
-                />
-              </div>
+              <label class="flex" for="name">Card Holder</label>
+              <input
+                class="w-full border px-4 py-2 lg:w-1/2"
+                type="text"
+                placeholder="SARAH JOHNSON"
+              />
+            </div>
 
-            <div class="flex gap-5">
-                <div class="flex flex-col w-[50px]">
-                  <label class="flex w-[50px]" for="name"
-                    >Date</label>
+            <div class="flex items-center gap-5 lg:w-1/2">
+              <div class="flex flex-col">
+                <label class="flex" for="name">Expiry Date</label>
+
+                <div class="flex w-[150px] items-center gap-1">
                   <input
-                    class="w-full border px-4 py-2 lg:w-1/2"
+                    class="w-1/2 border px-4 py-2 text-center"
                     type="text"
                     name=""
                     id=""
-                    placeholder="10\36"
+                    placeholder="10"
                   />
-                </div>
-    
-                <div class="flex flex-col w-[50px]">
-                  <label class="flex w-[50px]" for=""
-                    >CVV2/CVC2</label>
+
+                  <span>&bsol;</span>
+
                   <input
-                    class="w-full border py-2 lg:w-1/2"
-                    type="password"
-                    placeholder="&bull;&bull;&bull;"
+                    class="w-1/2 border px-4 py-2 text-center"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="36"
                   />
                 </div>
+              </div>
+
+              <div class="flex flex-col">
+                <label class="flex" for="">CVV/CVC</label>
+                <input
+                  class="w-full border py-2 text-center lg:w-1/2"
+                  type="password"
+                  placeholder="&bull;&bull;&bull;"
+                />
+              </div>
             </div>
 
             <div class="flex gap-3">
-                <button class="mt-4 w-40 bg-blue-900 px-4 py-2 text-white">
-                  Save changes
-                </button>
+              <button class="mt-4 w-40 bg-blue-900 px-4 py-2 text-white">
+                Save changes
+              </button>
 
-                <button class="mt-4 w-40 bg-yellow-400 px-4 py-2">
-                    Add new card
-                  </button>
+              <button class="mt-4 w-40 bg-yellow-400 px-4 py-2">
+                Add new card
+              </button>
             </div>
           </form>
 
-              <!-- another payment-methods -->
+          <!-- another payment-methods -->
 
-    <h2 class="text-xl font-medium text-left mt-10">Another methods:</h2>
-    <section class="grid grid-cols-3 lg:grid-cols-4 gap-4 my-4 w-fit">
-
-      <img class="w-[100px] cursor-pointer" src="../assets/images/payment-method-bitcoin.svg" alt="bitcoin icon">
-      <img class="w-[100px] cursor-pointer" src="../assets/images/payment-method-paypal.svg" alt="paypal icon">
-      <img class="w-[100px] cursor-pointer" src="../assets/images/payment-method-stripe.svg" alt="stripe icon">
-      <img class="w-[100px] cursor-pointer" src="../assets/images/payment-method-visa.svg" alt="visa icon">
-      <img class="w-[100px] cursor-pointer" src="../assets/images/payment-method-mastercard.svg" alt="mastercard icon">
-
-    </section>
-    <!-- another payment-methods -->
+          <h2 class="mt-10 text-left text-xl font-medium">Another methods:</h2>
+          <section class="my-4 grid w-fit grid-cols-3 gap-4 lg:grid-cols-4">
+            <img
+              class="w-[100px] cursor-pointer"
+              src="../assets/images/payment-method-bitcoin.svg"
+              alt="bitcoin icon"
+            />
+            <img
+              class="w-[100px] cursor-pointer"
+              src="../assets/images/payment-method-paypal.svg"
+              alt="paypal icon"
+            />
+            <img
+              class="w-[100px] cursor-pointer"
+              src="../assets/images/payment-method-stripe.svg"
+              alt="stripe icon"
+            />
+            <img
+              class="w-[100px] cursor-pointer"
+              src="../assets/images/payment-method-visa.svg"
+              alt="visa icon"
+            />
+            <img
+              class="w-[100px] cursor-pointer"
+              src="../assets/images/payment-method-mastercard.svg"
+              alt="mastercard icon"
+            />
+          </section>
+          <!-- another payment-methods -->
         </div>
       </section>
       <!-- /form  -->
-
-      
-
-
-
-
-
     </section>
-
-
 
     <!-- Desktop Footer  -->
 
