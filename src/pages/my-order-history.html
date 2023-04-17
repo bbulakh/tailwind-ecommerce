@@ -343,7 +343,6 @@
 
                 My Order History</a
               >
-             
             </div>
           </div>
         </div>
@@ -439,196 +438,101 @@
       </section>
       <!-- /sidebar  -->
 
-
-       <!-- Order table  -->
-       <section class="grid w-full max-w-[1200px] h-[600px] grid-cols-1 gap-3 px-5 pb-10">
+      <!-- Order table  -->
+      <section
+        class="grid h-[600px] w-full max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10"
+      >
         <table class="table-fixed">
-            <thead class="h-16 bg-neutral-200">
-                <tr>
-                    <th>ORDER</th>
-                    <th>DATE</th>
-                    <th>TOTAL</th>
-                    <th>STATUS</th>
-                    <th>ACTION</th>
-                </tr>
-            </thead>
-            <tbody>
+          <thead class="h-16 bg-neutral-200">
+            <tr>
+              <th>ORDER</th>
+              <th>DATE</th>
+              <th>TOTAL</th>
+              <th>STATUS</th>
+              <th>ACTION</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- 1 -->
 
+            <tr class="h-[100px] border-b">
+              <td class="text-center align-middle">&#8470; 1245</td>
+              <td class="mx-auto text-center">22/06/2023</td>
+              <td class="text-center align-middle">&#36;620</td>
 
-                <!-- 1 -->
+              <td class="mx-auto text-center">
+                <span class="border-2 border-green-500 py-1 px-3 text-green-500"
+                  >Delivered</span
+                >
+              </td>
+              <td class="text-center align-middle">
+                <a href="order-overview.html" class="bg-yellow-400 px-4 py-2"
+                  ><button class="text-center">View</button></a
+                >
+              </td>
+            </tr>
 
-                <tr class="h-[100px] border-b">
-                    <td class="align-middle">
-                        <div class="flex">
-                            <img class="w-[90px]" src="../assets/images/bedroom.png" alt="bedroom image" />
-                            <div class="ml-3 flex flex-col justify-center">
-                                <p class="font-bold text-xl">ITALIAN BED</p>
-                                <p class="text-sm text-gray-400">Size: XL</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="mx-auto text-center">&#36;320</td>
-                    <td class="align-middle">
-                        <div class="flex items-center justify-center">
-                            <button
-                                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500">
-                                &minus;
-                            </button>
-                            <div
-                                class="flex h-8 w-8 cursor-text items-center justify-center border-t border-b active:ring-gray-500">
-                                1
-                            </div>
-                            <button
-                                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500">
-                                &#43;
-                            </button>
-                        </div>
-                    </td>
-                    <td class="mx-auto text-center">&#36;320</td>
-                    <td class="align-middle">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="m-0 h-5 w-5 cursor-pointer">
-                            <path fill-rule="evenodd"
-                                d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </td>
-                </tr>
+            <!-- 2 -->
 
+            <tr class="h-[100px] border-b">
+              <td class="text-center align-middle">&#8470; 1232</td>
+              <td class="mx-auto text-center">20/05/2023</td>
+              <td class="text-center align-middle">&#36;3200</td>
 
-                <!-- 2 -->
+              <td class="mx-auto text-center">
+                <span
+                  class="border-2 border-orange-500 py-1 px-3 text-orange-500"
+                  >In Progress</span
+                >
+              </td>
+              <td class="text-center align-middle">
+                <a href="order-overview.html" class="bg-yellow-400 px-4 py-2"
+                  ><button class="text-center">View</button></a
+                >
+              </td>
+            </tr>
 
-                <tr class="h-[100px] border-b">
-                    <td class="align-middle">
-                        <div class="flex">
-                            <img class="w-[90px]" src="../assets/images/product-chair.png" alt="Chair Image" />
-                            <div class="ml-3 flex flex-col justify-center">
-                                <p class="font-bold text-xl">GUYER CHAIR</p>
-                                <p class="text-sm text-gray-400">Size: XL</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="mx-auto text-center">&#36;320</td>
-                    <td class="align-middle">
-                        <div class="flex items-center justify-center">
-                            <button
-                                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500">
-                                &minus;
-                            </button>
-                            <div
-                                class="flex h-8 w-8 cursor-text items-center justify-center border-t border-b active:ring-gray-500">
-                                1
-                            </div>
-                            <button
-                                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500">
-                                &#43;
-                            </button>
-                        </div>
-                    </td>
-                    <td class="mx-auto text-center">&#36;320</td>
-                    <td class="align-middle">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="m-0 h-5 w-5 cursor-pointer">
-                            <path fill-rule="evenodd"
-                                d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </td>
-                </tr>
+            <!-- 3 -->
 
-                <!-- 3 -->
+            <tr class="h-[100px] border-b">
+              <td class="text-center align-middle">&#8470; 3246</td>
+              <td class="mx-auto text-center">03/03/2022</td>
+              <td class="text-center align-middle">&#36;2500</td>
 
-                <tr class="h-[100px] border-b">
-                    <td class="align-middle">
-                        <div class="flex">
-                            <img class="w-[90px]" src="../assets/images/outdoors.png" alt="Outdoor furniture" />
-                            <div class="ml-3 flex flex-col justify-center">
-                                <p class="font-bold text-xl">OUTDOOR CHAIR</p>
-                                <p class="text-sm text-gray-400">Size: XL</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="mx-auto text-center">&#36;320</td>
-                    <td class="align-middle">
-                        <div class="flex items-center justify-center">
-                            <button
-                                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500">
-                                &minus;
-                            </button>
-                            <div
-                                class="flex h-8 w-8 cursor-text items-center justify-center border-t border-b active:ring-gray-500">
-                                1
-                            </div>
-                            <button
-                                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500">
-                                &#43;
-                            </button>
-                        </div>
-                    </td>
-                    <td class="mx-auto text-center">&#36;320</td>
-                    <td class="align-middle">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="m-0 h-5 w-5 cursor-pointer">
-                            <path fill-rule="evenodd"
-                                d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </td>
-                </tr>
+              <td class="mx-auto text-center">
+                <span class="border-2 border-red-500 py-1 px-3 text-red-500"
+                  >Declined</span
+                >
+              </td>
+              <td class="text-center align-middle">
+                <a href="order-overview.html" class="bg-yellow-400 px-4 py-2"
+                  ><button class="text-center">View</button></a
+                >
+              </td>
+            </tr>
 
-                <!-- 4 -->
+            <!-- 4 -->
 
-                <tr class="h-[100px]">
-                    <td class="align-middle">
-                        <div class="flex">
-                            <img class="w-[90px]" src="../assets/images/matrass.png" alt="Matrass Image" />
-                            <div class="ml-3 flex flex-col justify-center">
-                                <p class="font-bold text-xl">MATRASS COMFORT &plus;</p>
-                                <p class="text-sm text-gray-400">Size: XL</p>
-                            </div>
-                        </div>
-                    </td>
-                    <td class="mx-auto text-center">&#36;320</td>
-                    <td class="align-middle">
-                        <div class="flex items-center justify-center">
-                            <button
-                                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500">
-                                &minus;
-                            </button>
-                            <div
-                                class="flex h-8 w-8 cursor-text items-center justify-center border-t border-b active:ring-gray-500">
-                                1
-                            </div>
-                            <button
-                                class="flex h-8 w-8 cursor-pointer items-center justify-center border duration-100 hover:bg-neutral-100 focus:ring-2 focus:ring-gray-500 active:ring-2 active:ring-gray-500">
-                                &#43;
-                            </button>
-                        </div>
-                    </td>
-                    <td class="mx-auto text-center">&#36;320</td>
-                    <td class="align-middle">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                            class="m-0 h-5 w-5 cursor-pointer">
-                            <path fill-rule="evenodd"
-                                d="M8.75 1A2.75 2.75 0 006 3.75v.443c-.795.077-1.584.176-2.365.298a.75.75 0 10.23 1.482l.149-.022.841 10.518A2.75 2.75 0 007.596 19h4.807a2.75 2.75 0 002.742-2.53l.841-10.52.149.023a.75.75 0 00.23-1.482A41.03 41.03 0 0014 4.193V3.75A2.75 2.75 0 0011.25 1h-2.5zM10 4c.84 0 1.673.025 2.5.075V3.75c0-.69-.56-1.25-1.25-1.25h-2.5c-.69 0-1.25.56-1.25 1.25v.325C8.327 4.025 9.16 4 10 4zM8.58 7.72a.75.75 0 00-1.5.06l.3 7.5a.75.75 0 101.5-.06l-.3-7.5zm4.34.06a.75.75 0 10-1.5-.06l-.3 7.5a.75.75 0 101.5.06l.3-7.5z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </td>
-                </tr>
+            <tr class="h-[100px] border-b">
+              <td class="text-center align-middle">&#8470; 9827</td>
+              <td class="mx-auto text-center">31/01/2020</td>
+              <td class="text-center align-middle">&#36;1700</td>
 
-
-            </tbody>
+              <td class="mx-auto text-center">
+                <span class="border-2 border-blue-500 py-1 px-3 text-blue-500"
+                  >Need Payment</span
+                >
+              </td>
+              <td class="text-center align-middle">
+                <a href="order-overview.html" class="bg-yellow-400 px-4 py-2"
+                  ><button class="text-center">View</button></a
+                >
+              </td>
+            </tr>
+          </tbody>
         </table>
-    </section>
-    <!-- /Order table  -->
-
-
-
-
-
-      
-
-
+      </section>
+      <!-- /Order table  -->
     </section>
 
     <!-- Desktop Footer  -->
