@@ -258,30 +258,103 @@
     >
       <!-- form  -->
       <section class="grid w-full max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10">
+        <table class="table-fixed">
+          <thead class="h-16 bg-neutral-100">
+            <tr>
+              <th class="bg-neutral-600 text-white">ADDRESS</th>
+              <th>DELIVERY METHOD</th>
+              <th>PAYMENT METHOD</th>
+              <th>ORDER REVIEW</th>
+            </tr>
+          </thead>
+        </table>
+
         <div class="py-5">
           <form class="flex w-full flex-col gap-3" action="">
             <div class="flex w-full justify-between gap-2">
               <div class="flex w-1/2 flex-col">
                 <label class="flex" for="name"
-                  >First Name<span
+                  >Full Name<span
                     class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
                   ></span
                 ></label>
                 <input
                   class="w-full border px-4 py-2 outline-yellow-400"
                   type="text"
+                  placeholder="Sarah Johnson"
                 />
               </div>
 
               <div class="flex w-1/2 flex-col">
                 <label class="flex" for="name"
-                  >Last Name<span
+                  >Email Address<span
                     class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
                   ></span
                 ></label>
                 <input
                   class="w-full border px-4 py-2 outline-yellow-400"
                   type="text"
+                  placeholder="sarahj@maybell.com"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+
+            <div class="flex w-full justify-between gap-2">
+              <div class="flex w-1/2 flex-col">
+                <label class="flex" for="name"
+                  >Street<span
+                    class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
+                  ></span
+                ></label>
+                <input
+                  class="w-full border px-4 py-2 outline-yellow-400"
+                  type="text"
+                  placeholder="Big Serbian avenue, 18"
+                />
+              </div>
+
+              <div class="flex w-1/2 flex-col">
+                <label class="flex" for="name"
+                  >City<span
+                    class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
+                  ></span
+                ></label>
+                <input
+                  class="w-full border px-4 py-2 outline-yellow-400"
+                  type="text"
+                  placeholder="Beograde"
+                  name=""
+                  id=""
+                />
+              </div>
+            </div>
+
+            <div class="flex w-full justify-between gap-2">
+              <div class="flex w-1/2 flex-col">
+                <label class="flex" for="name"
+                  >ZIP code<span
+                    class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
+                  ></span
+                ></label>
+                <input
+                  class="w-full border px-4 py-2 outline-yellow-400"
+                  type="text"
+                  placeholder="176356"
+                />
+              </div>
+
+              <div class="flex w-1/2 flex-col">
+                <label class="flex" for="name"
+                  >Recipient<span
+                    class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
+                  ></span
+                ></label>
+                <input
+                  class="w-full border px-4 py-2 outline-yellow-400"
+                  type="text"
+                  placeholder="Andrew Johnson"
                   name=""
                   id=""
                 />
@@ -289,40 +362,18 @@
             </div>
 
             <div class="flex flex-col">
-              <label for="">Company</label>
-              <input class="border px-4 py-2 outline-yellow-400" type="text" />
-            </div>
-
-            <div class="flex flex-col">
-              <label for="">Country</label>
-              <input class="border px-4 py-2 outline-yellow-400" type="text" />
-            </div>
-
-            <div class="flex flex-col">
-              <label for="">Street Address</label>
-              <input class="border px-4 py-2 outline-yellow-400" type="text" />
-            </div>
-
-            <div class="flex flex-col">
-              <label for="">City</label>
-              <input class="border px-4 py-2 outline-yellow-400" type="text" />
-            </div>
-
-            <div class="flex flex-col">
-              <label for="">Phone number</label>
-              <input class="border px-4 py-2 outline-yellow-400" type="text" />
-            </div>
-
-            <div class="flex flex-col">
-              <label for="">Email</label>
-              <input class="border px-4 py-2 outline-yellow-400" type="text" />
-            </div>
-
-            <div class="flex flex-col">
-              <label for="">Zip Code</label>
-              <input class="border px-4 py-2 outline-yellow-400" type="text" />
+              <label for="">Commentary</label>
+              <textarea
+                class="border px-4 py-2 outline-yellow-400"
+                type="text"
+              ></textarea>
             </div>
           </form>
+        </div>
+
+        <div class="flex items-center justify-between w-full">
+          <a href="catalog.html" class="text-sm text-blue-900">&larr; Back to the shop</a>
+          <a href="#" class="px-4 py-2 bg-yellow-400">Place an order</a>
         </div>
       </section>
       <!-- /form  -->
@@ -333,66 +384,6 @@
         <div class="">
           <div class="border py-5 px-4 shadow-md">
             <p class="font-bold">ORDER SUMMARY</p>
-
-            <div class="mt-5 flex items-center justify-between">
-              <div class="flex w-[127px] flex-col">
-                <p>Italian shape sofa</p>
-                <p class="text-sm text-gray-500">Size: XL</p>
-              </div>
-
-              <div>
-                <p>x3</p>
-              </div>
-
-              <div>
-                <p>$320</p>
-              </div>
-            </div>
-
-            <div class="mt-5 flex items-center justify-between">
-              <div class="flex w-[127px] flex-col">
-                <p>Italian chair</p>
-                <p class="text-sm text-gray-500">Size: M</p>
-              </div>
-
-              <div class="text-center">
-                <p>x3</p>
-              </div>
-
-              <div>
-                <p>$320</p>
-              </div>
-            </div>
-
-            <div class="mt-5 flex items-center justify-between">
-              <div class="flex w-[127px] flex-col">
-                <p>Matrass comfort</p>
-                <p class="text-sm text-gray-500">Size: S</p>
-              </div>
-
-              <div class="text-center">
-                <p>x3</p>
-              </div>
-
-              <div>
-                <p>$320</p>
-              </div>
-            </div>
-
-            <div class="mt-5 flex items-center justify-between border-b pb-5">
-              <div class="flex w-[127px] flex-col">
-                <p>Kitchen Guyer</p>
-                <p class="text-sm text-gray-500">Size: L</p>
-              </div>
-
-              <div>
-                <p>x3</p>
-              </div>
-
-              <div>
-                <p>$320</p>
-              </div>
-            </div>
 
             <div class="flex justify-between border-b py-5">
               <p>Subtotal</p>
@@ -408,10 +399,6 @@
               <p>Total</p>
               <p>$1280</p>
             </div>
-
-            <button class="w-full bg-blue-900 px-5 py-2 text-white">
-              Place order
-            </button>
           </div>
         </div>
       </section>
@@ -421,7 +408,7 @@
 
     <!-- Cons bages -->
 
-    <section class="mx-auto flex justify-center gap-3">
+    <section class="mx-auto mb-10 flex justify-center gap-3">
       <!-- 1 -->
 
       <div
