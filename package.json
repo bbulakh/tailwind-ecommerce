@@ -2,19 +2,20 @@
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "gulp": "^4.0.2",
+    "gulp-csso": "^4.0.1",
     "gulp-html-replace": "^1.6.2",
+    "gulp-image-resize": "^0.13.1",
+    "gulp-imagemin": "7.1.0",
     "gulp-rename": "^2.0.0",
+    "gulp-tinypng-compress": "^1.2.5",
     "http-server": "^14.1.1",
     "md5-file": "^5.0.0",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
-    "gulp-csso": "^4.0.1",
-    "gulp-image-resize": "^0.13.1",
-    "gulp-imagemin": "7.1.0",
-    "gulp-tinypng-compress": "^1.2.5",
     "tailwindcss": "^3.2.7"
   },
   "dependencies": {
+    "@splidejs/splide": "^4.1.4",
     "gulp-cli": "^2.3.0"
   }
 }
