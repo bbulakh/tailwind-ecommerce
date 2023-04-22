@@ -36,5 +36,4 @@ Project includes 3 pages of ecommerce shop: main page, product overview and a ca
 Check the live demo here: [https://tailwind-ecommerce-demo.vercel.app/](https://tailwind-ecommerce-demo.vercel.app/)
 
 ## License
-[The MIT License (MIT)](https://github.com/bbulakh/tailwind-ecommerce/edit/main/LICENSE)
-
+[The MIT License (MIT)](https://github.com/bbulakh/tailwind-ecommerce/blob/main/LICENSE)
