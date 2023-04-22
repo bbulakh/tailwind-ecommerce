@@ -2,7 +2,7 @@
 
 Simple online furniture store webpage made by using TailwindCSS
 
-### Pages Preview:
+## Pages Preview
 
 <details open="true"><summary><strong>Homepage</strong></summary>
 <img width="350px" src="/src/assets/images/main-page-screenshot.png" alt="Homepage">
@@ -24,10 +24,17 @@ Simple online furniture store webpage made by using TailwindCSS
 <img width="350px" src="/src/assets/images/Wishlist-screenshot.png" alt="Product overview">
 </details>
 
-### About project:
+## About project
 
 Project includes 3 pages of ecommerce shop: main page, product overview and a catalog
 
 - Fully responsive;
 - Self-designed;
 - Grid layouts and Flexbox modules were used.
+
+## Live demo
+Check the live demo here: [https://tailwind-ecommerce-demo.vercel.app/](https://tailwind-ecommerce-demo.vercel.app/)
+
+## License
+[The MIT License (MIT)](https://github.com/bbulakh/tailwind-ecommerce/edit/main/LICENSE)
+
