@@ -36,6 +36,14 @@ task("build-images", function () {
   );
 });
 
+task("build-favicons", function () {
+  return src("./*.{png,svg,webmanifest}").pipe(
+    dest("public")
+  );
+});
+
+
+
 task("build-css-version", function () {
   const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
   return src("./public/assets/dist/css/tailwind-ecommerce.css")
