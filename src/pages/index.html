@@ -726,7 +726,6 @@
     >
       <div class="splide__track">
         <ul class="splide__list mx-auto max-w-[1200px]">
-
           <!-- 1 -->
           <li class="splide__slide">
             <div class="flex flex-col">
@@ -2574,21 +2573,20 @@
     </section>
     <!-- /Payment and copyright  -->
     <script>
-      
       var splide = new Splide(".splide", {
         type: "loop",
         focus: 0,
-        gap: '1rem',
+        gap: "1rem",
         perPage: 4,
         breakpoints: {
-    640: {
-      perPage: 2,
-    },
-    480: {
-      perPage: 1,
-    },
-  },
-} );
+          640: {
+            perPage: 2,
+          },
+          480: {
+            perPage: 1,
+          },
+        },
+      });
 
       splide.mount();
     </script>
