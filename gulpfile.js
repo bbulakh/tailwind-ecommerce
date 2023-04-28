@@ -22,7 +22,6 @@ task("tailwind", function (cb) {
 /**
  * Task: Prettier
  */
-
 task("pretty", function (cb) {
   const command = "npx prettier --write src/pages/*.html";
   exec(command, function (err, stdout, stderr) {
@@ -35,7 +34,6 @@ task("pretty", function (cb) {
 /**
  * Task: Export images and pages to public
  */
-
 task("build-pages", function () {
   return src("./src/pages/*.html").pipe(dest("./public/"));
 });
@@ -53,14 +51,13 @@ task("build-favicons", function () {
 });
 
 
-
 /**
  * Task: CSS Cypher and build
  */
-
 task("build-css-version", function () {
   const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
   return src("./public/assets/dist/css/tailwind-ecommerce.css")
+    .pipe(csso())
     .pipe(rename(`tailwind-ecommerce-${hash}.css`))
     .pipe(dest("./public/assets/dist/css/"));
 });
@@ -80,7 +77,6 @@ task("clean", function () {
   return src("./public/assets/dist/css/*.css")
   .pipe(clean());
 });
-
 
 
 task(
