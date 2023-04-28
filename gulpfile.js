@@ -68,18 +68,18 @@ task("build-favicons", function () {
  */
 
 task("build-css-version", function () {
-  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
-  return src("./public/assets/dist/css/tailwind-ecommerce.css")
-    .pipe(rename(`tailwind-ecommerce-${hash}.css`))
+  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.min.css");
+  return src("./public/assets/dist/css/tailwind-ecommerce.min.css")
+    .pipe(rename(`tailwind-ecommerce-min-${hash}.css`))
     .pipe(dest("./public/assets/dist/css/"));
 });
 
 task("build-html-updates", function () {
-  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
+  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.min.css");
   return src("./public/*.html")
     .pipe(
       htmlreplace({
-        css: `/assets/dist/css/tailwind-ecommerce-${hash}.css`,
+        css: `/assets/dist/css/tailwind-ecommerce-min-${hash}.css`,
       })
     )
     .pipe(dest("public/"));
@@ -91,6 +91,7 @@ task(
     "tailwind",
     "build-pages",
     "build-images",
+    "optimize-css",
     "build-css-version",
     "build-html-updates"
   )
