@@ -1,8 +1,8 @@
 {
   "devDependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
-    "del": "^7.0.0",
     "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
     "gulp-csso": "^4.0.1",
     "gulp-html-replace": "^1.6.2",
     "gulp-image-resize": "^0.13.1",
