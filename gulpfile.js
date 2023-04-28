@@ -2,18 +2,9 @@ const { src, dest, task, series } = require("gulp");
 const exec = require("child_process").exec;
 const htmlreplace = require("gulp-html-replace");
 const csso = require('gulp-csso');
+const clean = require('gulp-clean');
 const rename = require("gulp-rename");
 const md5File = require("md5-file");
-
-
-
-task('optimize-css', function () {
-  return src('public/assets/dist/css/tailwind-ecommerce.css')
-          .pipe(csso())
-          .pipe(rename('tailwind-ecommerce.min.css'))
-          .pipe(dest('public/assets/dist/css'));
-});
-
 
 /**
  * Task: tailwind
@@ -31,7 +22,6 @@ task("tailwind", function (cb) {
 /**
  * Task: Prettier
  */
-
 task("pretty", function (cb) {
   const command = "npx prettier --write src/pages/*.html";
   exec(command, function (err, stdout, stderr) {
@@ -44,7 +34,6 @@ task("pretty", function (cb) {
 /**
  * Task: Export images and pages to public
  */
-
 task("build-pages", function () {
   return src("./src/pages/*.html").pipe(dest("./public/"));
 });
@@ -62,48 +51,44 @@ task("build-favicons", function () {
 });
 
 
-
 /**
  * Task: CSS Cypher and build
  */
-
 task("build-css-version", function () {
-  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.min.css");
-  return src("./public/assets/dist/css/tailwind-ecommerce.min.css")
-    .pipe(rename(`tailwind-ecommerce-min-${hash}.css`))
+  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
+  return src("./public/assets/dist/css/tailwind-ecommerce.css")
+    .pipe(csso())
+    .pipe(rename(`tailwind-ecommerce-${hash}.css`))
     .pipe(dest("./public/assets/dist/css/"));
 });
 
 task("build-html-updates", function () {
-  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.min.css");
+  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
   return src("./public/*.html")
     .pipe(
       htmlreplace({
-        css: `/assets/dist/css/tailwind-ecommerce-min-${hash}.css`,
+        css: `/assets/dist/css/tailwind-ecommerce-${hash}.css`,
       })
     )
     .pipe(dest("public/"));
 });
 
+task("clean", function () {
+  return src("./public/assets/dist/css/*.css")
+  .pipe(clean());
+});
+
+
 task(
-  "default",
+  "build",
   series(
+    "clean",
     "tailwind",
     "build-pages",
     "build-images",
-    "optimize-css",
     "build-css-version",
     "build-html-updates"
   )
 );
 
-task(
-  "build",
-  series(
-    "tailwind",
-    "build-pages",
-    "build-images",
-    "build-css-version",
-    "build-html-updates"
-  )
-);
+task("default", series("build"))
