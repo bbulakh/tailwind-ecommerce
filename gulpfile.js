@@ -2,17 +2,9 @@ const { src, dest, task, series } = require("gulp");
 const exec = require("child_process").exec;
 const htmlreplace = require("gulp-html-replace");
 const csso = require('gulp-csso');
+const clean = require('gulp-clean');
 const rename = require("gulp-rename");
 const md5File = require("md5-file");
-
-
-task('optimize-css', function () {
-  return src('public/assets/dist/css/tailwind-ecommerce.css')
-          .pipe(csso())
-          .pipe(rename('tailwind-ecommerce.min.css'))
-          .pipe(dest('public/assets/dist/css'));
-});
-
 
 /**
  * Task: tailwind
@@ -84,9 +76,17 @@ task("build-html-updates", function () {
     .pipe(dest("public/"));
 });
 
+task("clean", function () {
+  return src("./public/assets/dist/css/*.css")
+  .pipe(clean());
+});
+
+
+
 task(
   "build",
   series(
+    "clean",
     "tailwind",
     "build-pages",
     "build-images",
