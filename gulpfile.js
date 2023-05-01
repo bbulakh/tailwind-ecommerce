@@ -7,7 +7,7 @@ const rename = require("gulp-rename");
 const md5File = require("md5-file");
 
 /**
- * Task: tailwind
+ * Task: Tailwind
  */
 task("tailwind", function (cb) {
   const command =
@@ -38,21 +38,26 @@ task("build-pages", function () {
   return src("./src/pages/*.html").pipe(dest("./public/"));
 });
 
+/**
+ * Task: Build images
+ */
 task("build-images", function () {
   return src("./src/assets/images/*.{png,svg,ico,jpg}").pipe(
     dest("./public/assets/images/")
   );
 });
 
+/**
+ * Task: Build favicons
+ */
 task("build-favicons", function () {
   return src("./*.{png,svg,webmanifest}").pipe(
     dest("public")
   );
 });
 
-
 /**
- * Task: CSS Cypher and build
+ * Task: Build css version
  */
 task("build-css-version", function () {
   const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
@@ -62,6 +67,9 @@ task("build-css-version", function () {
     .pipe(dest("./public/assets/dist/css/"));
 });
 
+/**
+ * Task: Build html updates
+ */
 task("build-html-updates", function () {
   const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
   return src("./public/*.html")
@@ -73,12 +81,17 @@ task("build-html-updates", function () {
     .pipe(dest("public/"));
 });
 
+/**
+ * Task: Clean
+ */
 task("clean", function () {
   return src("./public/assets/dist/css/*.css")
   .pipe(clean());
 });
 
-
+/**
+ * Task: Build
+ */
 task(
   "build",
   series(
@@ -91,4 +104,7 @@ task(
   )
 );
 
+/**
+ * Task: Default
+ */
 task("default", series("build"))
