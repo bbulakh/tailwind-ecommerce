@@ -93,11 +93,8 @@ task("clean", function () {
 });
 
 task("watch", function () {
-  watch("./src/pages/*.html", series("build-pages"));
-  watch(
-    "./src/assets/css/*.css",
-    series("build-css-version", "build-html-updates")
-  );
+  watch("./src/pages/*.html", series("build-pages", "build-css-version", "build-html-updates"));
+ 
 });
 
 /**
