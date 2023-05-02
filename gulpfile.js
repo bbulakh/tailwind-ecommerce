@@ -11,7 +11,7 @@ const md5File = require("md5-file");
  */
 task("tailwind", function (cb) {
   const command =
-    "npx tailwindcss -i ./src/assets/src/css/tailwind-ecommerce.css -o ./public/assets/dist/css/tailwind-ecommerce.css";
+    "npx tailwindcss -i ./src/assets/css/tailwind-ecommerce.css -o ./public/assets/dist/css/tailwind-ecommerce.css";
   exec(command, function (err, stdout, stderr) {
     console.log(stdout);
     console.log(stderr);
@@ -36,6 +36,12 @@ task("pretty", function (cb) {
  */
 task("build-pages", function () {
   return src("./src/pages/*.html").pipe(dest("./public/"));
+});
+
+task("build-js", function () {
+  return src("src/assets/js/index.js").pipe(
+    dest("./public/assets/dist/js/")
+  );
 });
 
 /**
@@ -100,7 +106,8 @@ task(
     "build-pages",
     "build-images",
     "build-css-version",
-    "build-html-updates"
+    "build-html-updates",
+    "build-js"
   )
 );
 
