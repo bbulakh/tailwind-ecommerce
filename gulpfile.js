@@ -1,8 +1,8 @@
-const { src, dest, task, series } = require("gulp");
+const { src, dest, task, series, watch } = require("gulp");
 const exec = require("child_process").exec;
 const htmlreplace = require("gulp-html-replace");
-const csso = require('gulp-csso');
-const clean = require('gulp-clean');
+const csso = require("gulp-csso");
+const clean = require("gulp-clean");
 const rename = require("gulp-rename");
 const md5File = require("md5-file");
 
@@ -39,9 +39,7 @@ task("build-pages", function () {
 });
 
 task("build-js", function () {
-  return src("src/assets/js/index.js").pipe(
-    dest("./public/assets/dist/js/")
-  );
+  return src("src/assets/js/index.js").pipe(dest("./public/assets/dist/js/"));
 });
 
 /**
@@ -57,17 +55,17 @@ task("build-images", function () {
  * Task: Build favicons
  */
 task("build-favicons", function () {
-  return src("./*.{png,svg,webmanifest}").pipe(
-    dest("public")
-  );
+  return src("./*.{png,svg,webmanifest}").pipe(dest("public"));
 });
 
 /**
  * Task: Build css version
  */
 task("build-css-version", function () {
-  const hash = md5File.sync("./public/assets/dist/css/tailwind-ecommerce.css");
-  return src("./public/assets/dist/css/tailwind-ecommerce.css")
+  const baseFilePath = "./public/assets/dist/css/tailwind-ecommerce.css";
+  const hash = md5File.sync(baseFilePath);
+
+  return src(baseFilePath)
     .pipe(csso())
     .pipe(rename(`tailwind-ecommerce-${hash}.css`))
     .pipe(dest("./public/assets/dist/css/"));
@@ -91,8 +89,15 @@ task("build-html-updates", function () {
  * Task: Clean
  */
 task("clean", function () {
-  return src("./public/assets/dist/css/*.css")
-  .pipe(clean());
+  return src("./public/assets/dist/css/*.css").pipe(clean());
+});
+
+task("watch", function () {
+  watch("./src/pages/*.html", series("build-pages"));
+  watch(
+    "./src/assets/css/*.css",
+    series("build-css-version", "build-html-updates")
+  );
 });
 
 /**
@@ -107,11 +112,12 @@ task(
     "build-images",
     "build-css-version",
     "build-html-updates",
-    "build-js"
+    "build-js",
+    "watch"
   )
 );
 
 /**
  * Task: Default
  */
-task("default", series("build"))
+task("default", series("build"));
