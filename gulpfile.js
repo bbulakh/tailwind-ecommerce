@@ -39,7 +39,7 @@ task("build-pages", function () {
 });
 
 task("build-js", function () {
-  return src("src/assets/js/index.js").pipe(dest("./public/assets/dist/js/"));
+  return src("src/assets/js/script.js").pipe(dest("./public/assets/dist/js/"));
 });
 
 /**
