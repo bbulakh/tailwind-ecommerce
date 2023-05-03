@@ -92,9 +92,11 @@ task("clean", function () {
   return src("./public/assets/dist/css/*.css").pipe(clean());
 });
 
+/**
+ * Task: watch
+ */
 task("watch", function () {
-  watch("./src/pages/*.html", series("build-pages", "build-css-version", "build-html-updates"));
- 
+  watch("./src/pages/*.html", series("build"));
 });
 
 /**
@@ -109,8 +111,7 @@ task(
     "build-images",
     "build-css-version",
     "build-html-updates",
-    "build-js",
-    "watch"
+    "build-js"
   )
 );
 
