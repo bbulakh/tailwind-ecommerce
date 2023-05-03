@@ -41,10 +41,12 @@
     </a>
 
     <div class="md:hidden">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-        class="h-8 w-8">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-      </svg>
+      <button id="burgerButton">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="h-8 w-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
     </div>
 
     <form class="hidden h-9 w-2/5 items-center border md:flex">
@@ -101,7 +103,7 @@
   <!-- /Header -->
 
   <!-- Burger menu  -->
-  <section class="absolute left-0 right-0 z-50 hidden h-screen w-full bg-white">
+  <section id="burgerMenu" onclick="menuToggle" class="absolute left-0 right-0 z-50 hidden h-screen w-full bg-white">
     <div class="mx-auto">
       <div class="mx-auto flex w-full justify-center gap-3 py-4">
         <a href="Wishlist.html" class="flex cursor-pointer flex-col items-center justify-center">
@@ -168,16 +170,16 @@
 
   <nav class="relative bg-blue-900">
     <div class="mx-auto hidden h-12 w-full max-w-[1200px] items-center md:flex">
-      <div class="ml-5 flex h-full w-40 cursor-pointer items-center justify-center bg-yellow-500">
-        <a class="flex justify-around" href="#">
+      <button id="menuButton" class="ml-5 flex h-full w-40 cursor-pointer items-center justify-center bg-yellow-500">
+        <div class="flex justify-around" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
             stroke="currentColor" class="mx-1 h-6 w-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg>
 
           All categories
-        </a>
-      </div>
+        </div>
+      </button>
 
       <div class="mx-7 flex gap-8">
         <a class="font-light text-white duration-100 hover:text-yellow-400 hover:underline" href="index.html">Home</a>
@@ -202,7 +204,7 @@
   <!-- /Nav bar -->
 
   <!-- Menu  -->
-  <section class="absolute left-0 right-0 z-10 hidden w-full border-b border-r border-l bg-white">
+  <section id="menu" onclick="menuToggle" class="absolute left-0 right-0 z-10 hidden w-full border-b border-r border-l bg-white">
     <div class="mx-auto flex max-w-[1200px] py-10">
       <div class="w-[300px] border-r">
         <ul class="px-5">
