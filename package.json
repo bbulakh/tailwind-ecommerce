@@ -1,5 +1,21 @@
 {
-  "devDependencies": {
+  "name": "tailwind-e-commerce",
+  "version": "1.0.0",
+  "description": "A collection of free E-commerce website page templates, built with the utility-first Tailwind CSS framework. MIT licensed - free for personal and commercial use.",
+  "homepage": "https://github.com/bbulakh/tailwind-ecommerce",
+  "author": "Bogdan Bulakh",
+  "license": "MIT",
+  "keywords": [
+    "layouts",
+    "tailwind",
+    "html",
+    "css",
+    "ecommerce"
+  ],
+  "bugs": {
+    "url": "https://github.com/bbulakh/tailwind-ecommerce/issues"
+  },
+  "dependencies": {
     "@tailwindcss/aspect-ratio": "^0.4.2",
     "gulp": "^4.0.2",
     "gulp-clean": "^0.4.0",
@@ -13,9 +29,7 @@
     "md5-file": "^5.0.0",
     "prettier": "^2.8.4",
     "prettier-plugin-tailwindcss": "^0.2.3",
-    "tailwindcss": "^3.2.7"
-  },
-  "dependencies": {
+    "tailwindcss": "^3.2.7",
     "@splidejs/splide": "^4.1.4",
     "gulp-cli": "^2.3.0"
   }
