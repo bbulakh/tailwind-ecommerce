@@ -14,15 +14,15 @@ MIT licensed - free for personal and commercial use.
 </details>
 
 <details><summary><strong>Product overview</strong></summary><br>
-<img width="350px" src="/src/assets/images/product-overview-screenshot.png" alt="Product overview">
+<img width="350px" src="/src/assets/images/product-overview-screenshot.png" alt="Product overview screenshot">
 </details>
 
 <details><summary><strong>Account page</strong></summary><br>
-<img width="350px" src="/src/assets/images/account-page-screenshot.png" alt="Product overview">
+<img width="350px" src="/src/assets/images/account-page-screenshot.png" alt="Account page screenshot">
 </details>
 
 <details><summary><strong>Wishlist</strong></summary><br>
-<img width="350px" src="/src/assets/images/Wishlist-screenshot.png" alt="Product overview">
+<img width="350px" src="/src/assets/images/wishlist-screenshot.png" alt="Wishlist preview">
 </details>
 
 ## Live demo
