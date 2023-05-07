@@ -46,7 +46,7 @@ task("build-js", function () {
  * Task: Build images
  */
 task("build-images", function () {
-  return src("./src/assets/images/*.{png,svg,ico,jpg}").pipe(
+  return src("./src/assets/images/*.{png,svg,ico,jpg,jpeg}").pipe(
     dest("./public/assets/images/")
   );
 });
