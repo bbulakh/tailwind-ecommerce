@@ -6,23 +6,23 @@ MIT licensed - free for personal and commercial use.
 ## Templates Preview
 
 <details open="true"><summary><strong>Homepage</strong></summary><br>
-<img width="350px" src="/src/assets/images/main-page-screenshot.png" alt="Homepage">
+<img width="350px" src="/src/assets/images/preview-main-page.jpeg" alt="Homepage">
 </details>
 
 <details><summary><strong>Catalog</strong></summary><br>
-<img width="350px" src="/src/assets/images/catalog-screenshot.png" alt="Catalog">
+<img width="350px" src="/src/assets/images/preview-catalog-page.jpeg" alt="Catalog">
 </details>
 
 <details><summary><strong>Product overview</strong></summary><br>
-<img width="350px" src="/src/assets/images/product-overview-screenshot.png" alt="Product overview screenshot">
+<img width="350px" src="/src/assets/images/preview-product-overview-page.jpeg" alt="Product overview screenshot">
 </details>
 
 <details><summary><strong>Account page</strong></summary><br>
-<img width="350px" src="/src/assets/images/account-page-screenshot.png" alt="Account page screenshot">
+<img width="350px" src="/src/assets/images/preview-account-page.jpeg" alt="Account page screenshot">
 </details>
 
 <details><summary><strong>Wishlist</strong></summary><br>
-<img width="350px" src="/src/assets/images/wishlist-screenshot.png" alt="Wishlist preview">
+<img width="350px" src="/src/assets/images/preview-wishlist-page.jpeg" alt="Wishlist preview">
 </details>
 
 ## Live demo
