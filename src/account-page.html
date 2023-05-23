@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- build:css -->
-    <link rel="stylesheet" href="/assets/dist/css/output.css" />
-    <!-- endbuild -->
+
+    <link rel="stylesheet" href="assets/css/tailwind-ecommerce.css" />
+
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -14,7 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Order Overview</title>
+    <title>Account</title>
   </head>
 
   <body>
@@ -25,7 +25,7 @@
       <a href="index.html">
         <img
           class="cursor-pointer sm:h-auto sm:w-auto"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
       </a>
@@ -359,7 +359,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/bed.svg"
+                src="./assets/images/bed.svg"
                 alt="Bedroom icon"
               />
               Bedroom
@@ -387,7 +387,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sleep.svg"
+                src="./assets/images/sleep.svg"
                 alt="bedroom icon"
               />
               Matrass
@@ -415,7 +415,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/outdoor.svg"
+                src="./assets/images/outdoor.svg"
                 alt="bedroom icon"
               />
               Outdoor
@@ -443,7 +443,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sofa.svg"
+                src="./assets/images/sofa.svg"
                 alt="bedroom icon"
               />
               Sofa
@@ -471,7 +471,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/kitchen.svg"
+                src="./assets/images/kitchen.svg"
                 alt="bedroom icon"
               />
               Kitchen
@@ -499,7 +499,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/food.svg"
+                src="./assets/images/food.svg"
                 alt="Food icon"
               />
               Living room
@@ -595,15 +595,7 @@
           <span class="mx-2 text-gray-500">&gt;</span>
         </li>
 
-        <li class="text-gray-500">
-          <a href="my-order-history.html">My Order History</a>
-        </li>
-
-        <li>
-          <span class="mx-2 text-gray-500">&gt;</span>
-        </li>
-
-        <li class="text-gray-500">Order Overview</li>
+        <li class="text-gray-500">Account</li>
       </ul>
     </nav>
     <!-- /breadcrumbs  -->
@@ -619,7 +611,7 @@
               width="40px"
               height="40px"
               class="rounded-full object-cover"
-              src="/assets/images/avatar-photo.png"
+              src="./assets/images/avatar-photo.png"
               alt="Red woman portrait"
             />
             <div class="ml-5">
@@ -634,8 +626,8 @@
             <div class="flex w-full">
               <div class="flex flex-col gap-2">
                 <a
-                  href="account-page.html"
-                  class="flex items-center gap-2 font-medium"
+                  href="#"
+                  class="flex items-center gap-2 font-medium text-violet-900"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -655,7 +647,7 @@
                 >
                 <a
                   href="profile-information.html"
-                  class="text-gray-500 duration-100 hover:text-yellow-400"
+                  class="active:blue-900 text-gray-500 duration-100 hover:text-yellow-400"
                   >Profile information</a
                 >
                 <a
@@ -678,7 +670,7 @@
             <div class="flex flex-col gap-2">
               <a
                 href="my-order-history.html"
-                class="flex items-center gap-2 font-medium text-violet-900"
+                class="flex items-center gap-2 font-medium active:text-violet-900"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -788,327 +780,92 @@
       </section>
       <!-- /sidebar  -->
 
-      <!-- Mobile product table  -->
+      <!-- option cards  -->
+
+      <div class="mb-5 flex items-center justify-between px-5 md:hidden">
+        <div class="flex gap-3">
+          <div class="py-5">
+            <div class="flex items-center">
+              <img
+                width="40px"
+                height="40px"
+                class="rounded-full object-cover"
+                src="./assets/images/avatar-photo.png"
+                alt="Red woman portrait"
+              />
+              <div class="ml-5">
+                <p class="font-medium text-gray-500">Hello,</p>
+                <p class="font-bold">Sarah Johnson</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex gap-3">
+          <button class="border bg-amber-400 py-2 px-2">
+            Profile settings
+          </button>
+        </div>
+      </div>
+
       <section
-        class="container mx-auto my-3 flex w-full flex-col gap-3 px-4 md:hidden"
+        class="grid w-full max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10 lg:grid-cols-3"
       >
-        <!-- 1 -->
-
-        <div class="flex w-full border px-4 py-4">
-          <img
-            class="self-start object-contain"
-            width="90px"
-            src="../assets/images/bedroom.png"
-            alt="bedroom image"
-          />
-          <div class="ml-3 flex w-full flex-col justify-center">
-            <div class="flex items-center justify-between">
-              <p class="text-xl font-bold">ITALIAN BED</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5"
+        <div class="">
+          <div class="border py-5 shadow-md">
+            <div class="flex justify-between px-4 pb-5">
+              <p class="font-bold">Personal Profile</p>
+              <a class="text-sm text-violet-900" href="profile-information.html"
+                >Edit</a
               >
-                <path
-                  d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
-                />
-              </svg>
             </div>
-            <p class="text-sm text-gray-400">Size: XL</p>
-            <p class="py-3 text-xl font-bold text-violet-900">$320</p>
-            <div class="mt-2 flex w-full items-center justify-between">
-              <div class="flex items-center justify-center">
-                <div
-                  class="flex cursor-text items-center justify-center active:ring-gray-500"
-                >
-                  Quantity: 1
-                </div>
-              </div>
+
+            <div class="px-4">
+              <p>Sarah Johnson</p>
+              <p>sarah@yandex.com</p>
+              <p>20371</p>
+              <p class="">1223 3432 3344 0082</p>
             </div>
           </div>
         </div>
 
-        <!-- 2 -->
-
-        <div class="flex w-full border px-4 py-4">
-          <img
-            class="self-start object-contain"
-            width="90px"
-            src="../assets/images/product-chair.png"
-            alt="Chair image"
-          />
-          <div class="ml-3 flex w-full flex-col justify-center">
-            <div class="flex items-center justify-between">
-              <p class="text-xl font-bold">GUYER CHAIR</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5"
+        <div class="">
+          <div class="border py-5 shadow-md">
+            <div class="flex justify-between px-4 pb-5">
+              <p class="font-bold">Shipping Address</p>
+              <a class="text-sm text-violet-900" href="manage-address.html"
+                >Edit</a
               >
-                <path
-                  d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
-                />
-              </svg>
             </div>
-            <p class="text-sm text-gray-400">Size: XL</p>
-            <p class="py-3 text-xl font-bold text-violet-900">$320</p>
-            <div class="mt-2 flex w-full items-center justify-between">
-              <div class="flex items-center justify-center">
-                <div
-                  class="flex cursor-text items-center justify-center active:ring-gray-500"
-                >
-                  Quantity: 1
-                </div>
-              </div>
+
+            <div class="px-4">
+              <p>Sarah Johnson</p>
+              <p>Beograde, Serbia</p>
+              <p>20371</p>
+              <p>1223 3432 3344 0082</p>
             </div>
           </div>
         </div>
 
-        <!-- 3 -->
-
-        <div class="flex w-full border px-4 py-4">
-          <img
-            class="self-start object-contain"
-            width="90px"
-            src="../assets/images/outdoors.png"
-            alt="Outdoor chair image"
-          />
-          <div class="ml-3 flex w-full flex-col justify-center">
-            <div class="flex items-center justify-between">
-              <p class="text-xl font-bold">OUTDOOR CHAIR</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5"
-              >
-                <path
-                  d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
-                />
-              </svg>
+        <div class="">
+          <div class="border py-5 shadow-md">
+            <div class="flex justify-between px-4 pb-5">
+              <p class="font-bold">Billing Address</p>
+              <a class="text-sm text-violet-900" href="#">Edit</a>
             </div>
-            <p class="text-sm text-gray-400">Size: XL</p>
-            <p class="py-3 text-xl font-bold text-violet-900">$320</p>
-            <div class="mt-2 flex w-full items-center justify-between">
-              <div class="flex items-center justify-center">
-                <div
-                  class="flex cursor-text items-center justify-center active:ring-gray-500"
-                >
-                  Quantity: 1
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <!-- 4 -->
-
-        <div class="flex w-full border px-4 py-4">
-          <img
-            class="self-start object-contain"
-            width="90px"
-            src="../assets/images/matrass.png"
-            alt="Matrass image"
-          />
-          <div class="ml-3 flex w-full flex-col justify-center">
-            <div class="flex items-center justify-between">
-              <p class="text-xl font-bold">MATRASS COMFORT &plus;</p>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="h-5 w-5"
-              >
-                <path
-                  d="M9.653 16.915l-.005-.003-.019-.01a20.759 20.759 0 01-1.162-.682 22.045 22.045 0 01-2.582-1.9C4.045 12.733 2 10.352 2 7.5a4.5 4.5 0 018-2.828A4.5 4.5 0 0118 7.5c0 2.852-2.044 5.233-3.885 6.82a22.049 22.049 0 01-3.744 2.582l-.019.01-.005.003h-.002a.739.739 0 01-.69.001l-.002-.001z"
-                />
-              </svg>
-            </div>
-            <p class="text-sm text-gray-400">Size: XL</p>
-            <p class="py-3 text-xl font-bold text-violet-900">$320</p>
-            <div class="mt-2 flex w-full items-center justify-between">
-              <div class="flex items-center justify-center">
-                <div
-                  class="flex cursor-text items-center justify-center active:ring-gray-500"
-                >
-                  Quantity: 1
-                </div>
-              </div>
+            <div class="px-4">
+              <p>Sarah Johnson</p>
+              <p>Beograde, Serbia</p>
+              <p>20371</p>
+              <p>1223 3432 3344 0082</p>
             </div>
           </div>
         </div>
       </section>
-      <!-- /Mobile product table  -->
-
-      <!-- Product table  -->
-      <section class="w-full max-w-[1200px] gap-3 px-5 pb-10">
-        <table class="hidden w-full md:table">
-          <thead class="h-16 bg-neutral-100">
-            <tr>
-              <th>ITEM</th>
-              <th>PRICE</th>
-              <th>QUANTITY</th>
-              <th>TOTAL</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- 1 -->
-
-            <tr class="h-[100px] border-b">
-              <td class="align-middle">
-                <div class="flex">
-                  <img
-                    class="w-[90px]"
-                    src="../assets/images/bedroom.png"
-                    alt="bedroom image"
-                  />
-                  <div class="ml-3 flex flex-col justify-center">
-                    <p class="text-xl font-bold">ITALIAN BED</p>
-                    <p class="text-sm text-gray-400">Size: XL</p>
-                  </div>
-                </div>
-              </td>
-              <td class="mx-auto text-center">&#36;320</td>
-              <td class="text-center align-middle">1</td>
-              <td class="mx-auto text-center">&#36;320</td>
-            </tr>
-
-            <!-- 2 -->
-
-            <tr class="h-[100px] border-b">
-              <td class="align-middle">
-                <div class="flex">
-                  <img
-                    class="w-[90px]"
-                    src="../assets/images/product-chair.png"
-                    alt="Chair Image"
-                  />
-                  <div class="ml-3 flex flex-col justify-center">
-                    <p class="text-xl font-bold">GUYER CHAIR</p>
-                    <p class="text-sm text-gray-400">Size: XL</p>
-                  </div>
-                </div>
-              </td>
-              <td class="mx-auto text-center">&#36;320</td>
-              <td class="text-center align-middle">1</td>
-              <td class="mx-auto text-center">&#36;320</td>
-            </tr>
-
-            <!-- 3 -->
-
-            <tr class="h-[100px] border-b">
-              <td class="align-middle">
-                <div class="flex">
-                  <img
-                    class="w-[90px]"
-                    src="../assets/images/outdoors.png"
-                    alt="Outdoor furniture"
-                  />
-                  <div class="ml-3 flex flex-col justify-center">
-                    <p class="text-xl font-bold">OUTDOOR CHAIR</p>
-                    <p class="text-sm text-gray-400">Size: XL</p>
-                  </div>
-                </div>
-              </td>
-              <td class="mx-auto text-center">&#36;320</td>
-              <td class="text-center align-middle">1</td>
-              <td class="mx-auto text-center">&#36;320</td>
-            </tr>
-
-            <!-- 4 -->
-
-            <tr class="h-[100px]">
-              <td class="align-middle">
-                <div class="flex">
-                  <img
-                    class="w-[90px]"
-                    src="../assets/images/matrass.png"
-                    alt="Matrass Image"
-                  />
-                  <div class="ml-3 flex flex-col justify-center">
-                    <p class="text-xl font-bold">MATRASS COMFORT &plus;</p>
-                    <p class="text-sm text-gray-400">Size: XL</p>
-                  </div>
-                </div>
-              </td>
-              <td class="mx-auto text-center">&#36;320</td>
-              <td class="text-center align-middle">1</td>
-              <td class="mx-auto text-center">&#36;320</td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- /Product table  -->
-
-        <!-- Summary  -->
-
-        <section class="my-5 flex w-full flex-col gap-4 lg:flex-row">
-          <div class="lg:w-1/2">
-            <div class="border py-5 px-4 shadow-md">
-              <p class="font-bold">ORDER SUMMARY</p>
-
-              <div class="flex justify-between border-b py-5">
-                <p>Subtotal</p>
-                <p>$1280</p>
-              </div>
-
-              <div class="flex justify-between border-b py-5">
-                <p>Shipping</p>
-                <p>Free</p>
-              </div>
-
-              <div class="flex justify-between py-5">
-                <p>Total</p>
-                <p>$1280</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Address info  -->
-
-          <div class="lg:w-1/2">
-            <div class="border py-5 px-4 shadow-md">
-              <p class="font-bold">ORDER INFORMATION</p>
-
-              <div>
-                <p>Order &num;1245</p>
-              </div>
-
-              <div class="flex flex-col border-b py-5">
-                <p>
-                  Status:
-                  <span class="font-bold text-green-600">Delivered</span>
-                </p>
-
-                <p>Date: 20/12/2023</p>
-              </div>
-
-              <div></div>
-
-              <div class="flex flex-col border-b py-5">
-                <p class="font-bold">ADDRESS INFORMATION</p>
-                <p>Country: Serbia</p>
-                <p>City: Beograde</p>
-                <p>Zip-Code: 125647</p>
-                <p>Delivery: UPS</p>
-              </div>
-
-              <div class="flex flex-col py-5">
-                <p class="font-bold">PAYMENT INFORMATION</p>
-                <p>Payment method: Credit Card</p>
-                <p>Card Holder: Sarah Johnson</p>
-                <p>Card number: &bull;&bull;&bull;&bull; 4214</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- /Address info  -->
-        </section>
-      </section>
-
-      <!-- /Summary -->
     </section>
+
+    <!-- /Option cards -->
 
     <!-- Desktop Footer  -->
 
@@ -1118,7 +875,7 @@
       <div class="ml-5">
         <img
           class="mt-10 mb-5"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
         <p class="pl-0">
@@ -1202,7 +959,7 @@
       <div>
         <img
           class="mt-10"
-          src="/assets/images/company-logo-inverted.svg"
+          src="./assets/images/company-logo-inverted.svg"
           alt="company logo"
         />
         <p class="pl-0 text-center text-white">&copy; Bogdan Bulakh, 2023</p>
@@ -1238,6 +995,6 @@
       </div>
     </section>
     <!-- /Payment and copyright  -->
-    <script type="text/javascript" src="/assets/dist/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>
