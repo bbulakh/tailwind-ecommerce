@@ -5,6 +5,17 @@
   "homepage": "https://github.com/bbulakh/tailwind-ecommerce",
   "author": "Bogdan Bulakh",
   "license": "MIT",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build;"
+  },
+  "browserslist": "last 2 versions",
+  "targets": {
+    "default": {
+      "distDir": "./build/"
+    }
+  },
   "keywords": [
     "layouts",
     "tailwind",
@@ -16,21 +27,11 @@
     "url": "https://github.com/bbulakh/tailwind-ecommerce/issues"
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "gulp": "^4.0.2",
-    "gulp-clean": "^0.4.0",
-    "gulp-csso": "^4.0.1",
-    "gulp-html-replace": "^1.6.2",
-    "gulp-image-resize": "^0.13.1",
-    "gulp-imagemin": "7.1.0",
-    "gulp-rename": "^2.0.0",
-    "gulp-tinypng-compress": "^1.2.5",
-    "http-server": "^14.1.1",
-    "md5-file": "^5.0.0",
-    "prettier": "^2.8.4",
-    "prettier-plugin-tailwindcss": "^0.2.3",
-    "tailwindcss": "^3.2.7",
     "@splidejs/splide": "^4.1.4",
-    "gulp-cli": "^2.3.0"
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "tailwindcss": "^3.3.2",
+    "@parcel/packager-raw-url": "^2.8.3",
+    "@parcel/transformer-webmanifest": "^2.8.3",
+    "parcel": "^2.8.3"
   }
-}
+} 

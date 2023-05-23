@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- build:css -->
-    <link rel="stylesheet" href="/assets/dist/css/output.css" />
-    <!-- endbuild -->
+
+    <link rel="stylesheet" href="assets/css/tailwind-ecommerce.css" />
+
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -14,7 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Profile information</title>
+    <title>Manage Addresses</title>
   </head>
 
   <body>
@@ -25,7 +25,7 @@
       <a href="index.html">
         <img
           class="cursor-pointer sm:h-auto sm:w-auto"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
       </a>
@@ -359,7 +359,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/bed.svg"
+                src="./assets/images/bed.svg"
                 alt="Bedroom icon"
               />
               Bedroom
@@ -387,7 +387,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sleep.svg"
+                src="./assets/images/sleep.svg"
                 alt="bedroom icon"
               />
               Matrass
@@ -415,7 +415,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/outdoor.svg"
+                src="./assets/images/outdoor.svg"
                 alt="bedroom icon"
               />
               Outdoor
@@ -443,7 +443,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sofa.svg"
+                src="./assets/images/sofa.svg"
                 alt="bedroom icon"
               />
               Sofa
@@ -471,7 +471,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/kitchen.svg"
+                src="./assets/images/kitchen.svg"
                 alt="bedroom icon"
               />
               Kitchen
@@ -499,7 +499,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/food.svg"
+                src="./assets/images/food.svg"
                 alt="Food icon"
               />
               Living room
@@ -595,7 +595,7 @@
           <span class="mx-2 text-gray-500">&gt;</span>
         </li>
 
-        <li class="text-gray-500">Account</li>
+        <li class="text-gray-500">Manage Addresses</li>
       </ul>
     </nav>
     <!-- /breadcrumbs  -->
@@ -611,7 +611,7 @@
               width="40px"
               height="40px"
               class="rounded-full object-cover"
-              src="/assets/images/avatar-photo.png"
+              src="./assets/images/avatar-photo.png"
               alt="Red woman portrait"
             />
             <div class="ml-5">
@@ -647,12 +647,12 @@
                 >
                 <a
                   href="profile-information.html"
-                  class="text-violet-900 duration-100"
+                  class="text-gray-500 duration-100 hover:text-yellow-400"
                   >Profile information</a
                 >
                 <a
                   href="manage-address.html"
-                  class="text-gray-500 duration-100 hover:text-yellow-400"
+                  class="text-violet-900 duration-100"
                   >Manage Addresses</a
                 >
                 <a
@@ -783,48 +783,24 @@
       <!-- form  -->
       <section class="grid w-full max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10">
         <div class="py-5">
-          <div class="w-full">
-            <h2>Avatar image</h2>
-            <div
-              class="mx-auto mb-5 flex flex-row items-center bg-neutral-100 py-5 lg:mx-0 lg:w-1/2"
-            >
-              <img
-                class="ml-5 h-20 w-20 rounded-full"
-                src="../assets/images/avatar-photo.png"
-                alt="Sarah Johnson image"
-              />
-
-              <form>
-                <div>
-                  <label class="block">
-                    <span class="sr-only">Choose profile photo</span>
-                    <input
-                      type="file"
-                      class="mx-auto ml-5 flex w-full justify-center border-yellow-400 text-sm outline-none file:mr-4 file:bg-amber-400 file:py-2 file:px-4 file:text-sm file:font-semibold"
-                    />
-                  </label>
-                </div>
-              </form>
-            </div>
-          </div>
-
+          <div class="w-full"></div>
           <form class="flex w-full flex-col gap-3" action="">
             <div class="flex w-full flex-col">
               <label class="flex" for="name"
-                >First Name<span
+                >Country<span
                   class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
                 ></span
               ></label>
               <input
                 class="w-full border px-4 py-2 lg:w-1/2"
                 type="text"
-                placeholder="Sarah"
+                placeholder="Serbia"
               />
             </div>
 
             <div class="flex w-full flex-col">
               <label class="flex" for="name"
-                >Last Name<span
+                >City<span
                   class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
                 ></span
               ></label>
@@ -833,26 +809,22 @@
                 type="text"
                 name=""
                 id=""
-                placeholder="Johnson"
+                placeholder="Beograde"
               />
             </div>
 
             <div class="flex flex-col">
-              <label for="">Bio</label>
-              <textarea
-                class="w-full border px-4 py-2 text-gray-500 outline-none lg:w-1/2"
-                name=""
-                id=""
-                cols="30"
-                rows="10"
-              >
-CEO, MayBell Inc.</textarea
-              >
-
-              <button class="mt-4 w-40 bg-violet-900 px-4 py-2 text-white">
-                Save changes
-              </button>
+              <label for="">Zip Code</label>
+              <input
+                class="w-full border px-4 py-2 lg:w-1/2"
+                type="text"
+                placeholder="240116"
+              />
             </div>
+
+            <button class="mt-4 w-40 bg-violet-900 px-4 py-2 text-white">
+              Save changes
+            </button>
           </form>
         </div>
       </section>
@@ -867,7 +839,7 @@ CEO, MayBell Inc.</textarea
       <div class="ml-5">
         <img
           class="mt-10 mb-5"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
         <p class="pl-0">
@@ -951,7 +923,7 @@ CEO, MayBell Inc.</textarea
       <div>
         <img
           class="mt-10"
-          src="/assets/images/company-logo-inverted.svg"
+          src="./assets/images/company-logo-inverted.svg"
           alt="company logo"
         />
         <p class="pl-0 text-center text-white">&copy; Bogdan Bulakh, 2023</p>
@@ -987,6 +959,6 @@ CEO, MayBell Inc.</textarea
       </div>
     </section>
     <!-- /Payment and copyright  -->
-    <script type="text/javascript" src="/assets/dist/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>

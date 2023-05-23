@@ -6,3 +6,6 @@ Thumbs.db
 *.swp
 public
 .DS_store
+.parcel-cache
+build/
+dist/

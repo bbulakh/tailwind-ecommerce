@@ -25,6 +25,27 @@ MIT licensed - free for personal and commercial use.
 <img width="350px" src="/src/assets/images/preview-wishlist-page.jpeg" alt="Wishlist preview">
 </details>
 
+## Getting started
+
+1. Clone the project
+```
+git clone https://github.com/bbulakh/tailwind-ecommerce.git
+```
+
+2. Install the dependencies:
+```
+npm install
+```
+
+3. Run the project
+```
+# Start server
+npm run start
+
+# or Build 
+npm run build
+```
+
 ## Live demo
 Check the live demo here: [https://tailwind-ecommerce-demo.vercel.app/](https://tailwind-ecommerce-demo.vercel.app/)
 

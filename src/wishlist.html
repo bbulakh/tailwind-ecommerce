@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- build:css -->
-    <link rel="stylesheet" href="/assets/dist/css/output.css" />
-    <!-- endbuild -->
+
+    <link rel="stylesheet" href="assets/css/tailwind-ecommerce.css" />
+
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -14,18 +14,18 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Manage Addresses</title>
+    <title>My Wishlist</title>
   </head>
 
   <body>
     <!-- Header -->
     <header
-      class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5"
+      class="relative mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5"
     >
       <a href="index.html">
         <img
           class="cursor-pointer sm:h-auto sm:w-auto"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
       </a>
@@ -359,7 +359,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/bed.svg"
+                src="./assets/images/bed.svg"
                 alt="Bedroom icon"
               />
               Bedroom
@@ -387,7 +387,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sleep.svg"
+                src="./assets/images/sleep.svg"
                 alt="bedroom icon"
               />
               Matrass
@@ -415,7 +415,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/outdoor.svg"
+                src="./assets/images/outdoor.svg"
                 alt="bedroom icon"
               />
               Outdoor
@@ -443,7 +443,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sofa.svg"
+                src="./assets/images/sofa.svg"
                 alt="bedroom icon"
               />
               Sofa
@@ -471,7 +471,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/kitchen.svg"
+                src="./assets/images/kitchen.svg"
                 alt="bedroom icon"
               />
               Kitchen
@@ -499,7 +499,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/food.svg"
+                src="./assets/images/food.svg"
                 alt="Food icon"
               />
               Living room
@@ -595,7 +595,7 @@
           <span class="mx-2 text-gray-500">&gt;</span>
         </li>
 
-        <li class="text-gray-500">Manage Addresses</li>
+        <li class="text-gray-500">My Wishlist</li>
       </ul>
     </nav>
     <!-- /breadcrumbs  -->
@@ -611,7 +611,7 @@
               width="40px"
               height="40px"
               class="rounded-full object-cover"
-              src="/assets/images/avatar-photo.png"
+              src="./assets/images/avatar-photo.png"
               alt="Red woman portrait"
             />
             <div class="ml-5">
@@ -627,7 +627,7 @@
               <div class="flex flex-col gap-2">
                 <a
                   href="account-page.html"
-                  class="flex items-center gap-2 font-medium"
+                  class="flex items-center gap-2 font-medium active:text-violet-900"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -652,7 +652,7 @@
                 >
                 <a
                   href="manage-address.html"
-                  class="text-violet-900 duration-100"
+                  class="text-gray-500 duration-100 hover:text-yellow-400"
                   >Manage Addresses</a
                 >
                 <a
@@ -727,7 +727,7 @@
             <div class="flex flex-col gap-2">
               <a
                 href="wishlist.html"
-                class="flex items-center gap-2 font-medium active:text-violet-900"
+                class="flex items-center gap-2 font-medium text-violet-900"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -780,55 +780,525 @@
       </section>
       <!-- /sidebar  -->
 
-      <!-- form  -->
-      <section class="grid w-full max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10">
-        <div class="py-5">
-          <div class="w-full"></div>
-          <form class="flex w-full flex-col gap-3" action="">
-            <div class="flex w-full flex-col">
-              <label class="flex" for="name"
-                >Country<span
-                  class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
-                ></span
-              ></label>
-              <input
-                class="w-full border px-4 py-2 lg:w-1/2"
-                type="text"
-                placeholder="Serbia"
-              />
-            </div>
+      <!-- option cards  -->
 
-            <div class="flex w-full flex-col">
-              <label class="flex" for="name"
-                >City<span
-                  class="block text-sm font-medium text-slate-700 after:ml-0.5 after:text-red-500 after:content-['*']"
-                ></span
-              ></label>
-              <input
-                class="w-full border px-4 py-2 lg:w-1/2"
-                type="text"
-                name=""
-                id=""
-                placeholder="Beograde"
+      <div class="mb-5 flex items-center justify-between px-5 md:hidden">
+        <div class="flex gap-3">
+          <div class="py-5">
+            <div class="flex items-center">
+              <img
+                width="40px"
+                height="40px"
+                class="rounded-full object-cover"
+                src="./assets/images/avatar-photo.png"
+                alt="Red woman portrait"
               />
+              <div class="ml-5">
+                <p class="font-medium text-gray-500">Hello,</p>
+                <p class="font-bold">Sarah Johnson</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
 
-            <div class="flex flex-col">
-              <label for="">Zip Code</label>
-              <input
-                class="w-full border px-4 py-2 lg:w-1/2"
-                type="text"
-                placeholder="240116"
-              />
+      <!-- Desktop product cards  -->
+      <section
+        class="mx-auto grid max-w-[1200px] grid-cols-2 gap-3 px-5 pb-10 md:hidden lg:grid-cols-3"
+      >
+        <!-- 1 -->
+        <div class="flex flex-col">
+          <div class="relative flex">
+            <img
+              class=""
+              src="./assets/images/product-chair.png"
+              alt="sofa image"
+            />
+            <div
+              class="absolute flex h-full w-full items-center justify-center gap-3 opacity-0 duration-150 hover:opacity-100"
+            >
+              <span
+                class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-amber-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-amber-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+                  />
+                </svg>
+              </span>
             </div>
+          </div>
 
-            <button class="mt-4 w-40 bg-violet-900 px-4 py-2 text-white">
-              Save changes
-            </button>
-          </form>
+          <div>
+            <p class="mt-2">CHAIR</p>
+            <p class="font-medium text-violet-900">$45.00</p>
+            <p>Availability: <span class="text-green-600">In stock</span></p>
+
+            <div class="flex items-center gap-3">
+              <button class="my-5 h-10 w-full bg-violet-900 text-white">
+                Add to cart
+              </button>
+              <i class="cursor-pointer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="flex flex-col">
+          <div class="relative flex">
+            <img
+              class=""
+              src="./assets/images/product-chair.png"
+              alt="sofa image"
+            />
+            <div
+              class="absolute flex h-full w-full items-center justify-center gap-3 opacity-0 duration-150 hover:opacity-100"
+            >
+              <span
+                class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-amber-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-amber-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <p class="mt-2">CHAIR</p>
+            <p class="font-medium text-violet-900">$45.00</p>
+            <p>Availability: <span class="text-green-600">In stock</span></p>
+
+            <div class="flex items-center gap-3">
+              <button class="my-5 h-10 w-full bg-violet-900 text-white">
+                Add to cart
+              </button>
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="flex flex-col">
+          <div class="relative flex">
+            <img
+              class=""
+              src="./assets/images/product-chair.png"
+              alt="sofa image"
+            />
+            <div
+              class="absolute flex h-full w-full items-center justify-center gap-3 opacity-0 duration-150 hover:opacity-100"
+            >
+              <span
+                class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-amber-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-amber-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <p class="mt-2">CHAIR</p>
+            <p class="font-medium text-violet-900">$45.00</p>
+            <p>Availability: <span class="text-red-600">Out of stock</span></p>
+
+            <div class="flex items-center gap-3">
+              <button class="my-5 h-10 w-full bg-violet-900 text-white">
+                Add to cart
+              </button>
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="flex flex-col">
+          <div class="relative flex">
+            <img
+              class=""
+              src="./assets/images/product-chair.png"
+              alt="sofa image"
+            />
+            <div
+              class="absolute flex h-full w-full items-center justify-center gap-3 opacity-0 duration-150 hover:opacity-100"
+            >
+              <span
+                class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-amber-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+                  />
+                </svg>
+              </span>
+              <span
+                class="flex h-8 w-8 cursor-pointer items-center justify-center rounded-full bg-amber-400"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-4 w-4"
+                >
+                  <path
+                    d="M11.645 20.91l-.007-.003-.022-.012a15.247 15.247 0 01-.383-.218 25.18 25.18 0 01-4.244-3.17C4.688 15.36 2.25 12.174 2.25 8.25 2.25 5.322 4.714 3 7.688 3A5.5 5.5 0 0112 5.052 5.5 5.5 0 0116.313 3c2.973 0 5.437 2.322 5.437 5.25 0 3.925-2.438 7.111-4.739 9.256a25.175 25.175 0 01-4.244 3.17 15.247 15.247 0 01-.383.219l-.022.012-.007.004-.003.001a.752.752 0 01-.704 0l-.003-.001z"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <p class="mt-2">CHAIR</p>
+            <p class="font-medium text-violet-900">$45.00</p>
+            <p>Availability: <span class="text-red-600">Out of stock</span></p>
+
+            <div class="flex items-center gap-3">
+              <button class="my-5 h-10 w-full bg-violet-900 text-white">
+                Add to cart
+              </button>
+              <i
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- /form  -->
+
+      <!-- /Desktop product cards  -->
+
+      <!-- Mobile product cards  -->
+      <section
+        class="hidden w-full max-w-[1200px] grid-cols-1 gap-8 px-5 pb-10 lg:grid"
+      >
+        <!-- 1 -->
+        <div
+          class="flex w-full flex-row items-center justify-between border py-5 px-4"
+        >
+          <div class="flex w-full items-center gap-4">
+            <img
+              width="100px"
+              class="object-cover"
+              src="./assets/images/kitchen.png"
+              alt="Kitchen image"
+            />
+
+            <div class="flex flex-col justify-center">
+              <p class="text-xl font-bold">ITALIAN KITCHEN</p>
+              <p class="text-gray-500">
+                Availability:
+                <span class="font-medium text-green-600">In Stock</span>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex w-3/5 flex-col items-center justify-between lg:flex-row"
+          >
+            <p class="mt-2 text-xl font-bold text-violet-900">$320.00</p>
+
+            <div class="mt-2 flex items-center">
+              <button class="w-full bg-amber-400 py-2 lg:px-5">
+                Add to cart
+              </button>
+
+              <i class="ml-5 cursor-pointer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full flex-row items-center justify-between border py-5 px-4"
+        >
+          <div class="flex w-full items-center gap-4">
+            <img
+              width="100px"
+              class="object-cover"
+              src="./assets/images/bedroom.png"
+              alt="Bedroom image"
+            />
+
+            <div class="flex flex-col justify-center">
+              <p class="text-xl font-bold">QUEEN SIZE BED</p>
+              <p class="text-gray-500">
+                Availability:
+                <span class="font-medium text-green-600">In Stock</span>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex w-3/5 flex-col items-center justify-between lg:flex-row"
+          >
+            <p class="mt-2 text-xl font-bold text-violet-900">$320.00</p>
+
+            <div class="mt-2 flex items-center">
+              <button class="w-full bg-amber-400 py-2 lg:px-5">
+                Add to cart
+              </button>
+
+              <i class="ml-5 cursor-pointer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full flex-row items-center justify-between border py-5 px-4"
+        >
+          <div class="flex w-full items-center gap-4">
+            <img
+              width="100px"
+              class="object-cover"
+              src="./assets/images/living-room.png"
+              alt="Sofa image"
+            />
+
+            <div class="flex flex-col justify-center">
+              <p class="text-xl font-bold">LARGE SOFA</p>
+              <p class="text-gray-500">
+                Availability:
+                <span class="font-medium text-green-600">In Stock</span>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex w-3/5 flex-col items-center justify-between lg:flex-row"
+          >
+            <p class="mt-2 text-xl font-bold text-violet-900">$320.00</p>
+
+            <div class="mt-2 flex items-center">
+              <button class="w-full bg-amber-400 py-2 lg:px-5">
+                Add to cart
+              </button>
+
+              <i class="ml-5 cursor-pointer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="flex w-full flex-row items-center justify-between border py-5 px-4"
+        >
+          <div class="flex w-full items-center gap-4">
+            <img
+              width="100px"
+              class="object-cover"
+              src="./assets/images/product-chair.png"
+              alt="Chair image"
+            />
+
+            <div class="flex flex-col justify-center">
+              <p class="text-xl font-bold">CHAIR PURPLE</p>
+              <p class="text-gray-500">
+                Availability:
+                <span class="font-medium text-red-600">Out of Stock</span>
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="flex w-3/5 flex-col items-center justify-between lg:flex-row"
+          >
+            <p class="mt-2 text-xl font-bold text-violet-900">$320.00</p>
+
+            <div class="mt-2 flex items-center">
+              <button class="w-full bg-amber-400 py-2 lg:px-5">
+                Add to cart
+              </button>
+
+              <i class="ml-5 cursor-pointer"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                  class="h-6 w-6"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Mobile product cards  -->
     </section>
 
     <!-- Desktop Footer  -->
@@ -839,7 +1309,7 @@
       <div class="ml-5">
         <img
           class="mt-10 mb-5"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
         <p class="pl-0">
@@ -923,7 +1393,7 @@
       <div>
         <img
           class="mt-10"
-          src="/assets/images/company-logo-inverted.svg"
+          src="./assets/images/company-logo-inverted.svg"
           alt="company logo"
         />
         <p class="pl-0 text-center text-white">&copy; Bogdan Bulakh, 2023</p>
@@ -959,6 +1429,6 @@
       </div>
     </section>
     <!-- /Payment and copyright  -->
-    <script type="text/javascript" src="/assets/dist/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- build:css -->
-    <link rel="stylesheet" href="/assets/dist/css/output.css" />
-    <!-- endbuild -->
+
+    <link rel="stylesheet" href="assets/css/tailwind-ecommerce.css" />
+
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -14,7 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
-    <title>Contact Us</title>
+    <title>Login</title>
   </head>
 
   <body>
@@ -25,7 +25,7 @@
       <a href="index.html">
         <img
           class="cursor-pointer sm:h-auto sm:w-auto"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
       </a>
@@ -359,7 +359,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/bed.svg"
+                src="./assets/images/bed.svg"
                 alt="Bedroom icon"
               />
               Bedroom
@@ -387,7 +387,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sleep.svg"
+                src="./assets/images/sleep.svg"
                 alt="bedroom icon"
               />
               Matrass
@@ -415,7 +415,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/outdoor.svg"
+                src="./assets/images/outdoor.svg"
                 alt="bedroom icon"
               />
               Outdoor
@@ -443,7 +443,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sofa.svg"
+                src="./assets/images/sofa.svg"
                 alt="bedroom icon"
               />
               Sofa
@@ -471,7 +471,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/kitchen.svg"
+                src="./assets/images/kitchen.svg"
                 alt="bedroom icon"
               />
               Kitchen
@@ -499,7 +499,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/food.svg"
+                src="./assets/images/food.svg"
                 alt="Food icon"
               />
               Living room
@@ -570,300 +570,54 @@
     </section>
 
     <!-- /Menu  -->
-    <!-- BG Image  -->
+    <!-- Login card  -->
+    <section class="mx-auto mt-10 mb-10 max-w-[1200px] px-5">
+      <div class="container mx-auto border px-5 py-5 shadow-sm md:w-1/2">
+        <div class="">
+          <p class="text-4xl font-bold">LOGIN</p>
+          <p>Welcome back, customer!</p>
+        </div>
 
-    <div class="relative">
-      <img
-        class="w-full object-cover brightness-50 filter lg:h-[500px]"
-        src="../assets/images/contact-bg.png"
-        alt="Iphone with Macbook image"
-      />
+        <form class="mt-6 flex flex-col">
+          <label for="email">Email Address</label>
+          <input
+            class="mb-3 mt-3 border px-4 py-2"
+            type="text"
+            placeholder="youremail@domain.com"
+          />
 
-      <div
-        class="absolute top-1/2 left-1/2 mx-auto flex w-11/12 max-w-[1200px] -translate-x-1/2 -translate-y-1/2 flex-col text-center text-white lg:ml-5"
-      >
-        <h1 class="text-4xl font-bold sm:text-5xl">Contact us</h1>
-        <p class="mx-auto pt-3 text-xs lg:w-3/5 lg:pt-5 lg:text-base">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
-          aperiam natus, nulla, obcaecati nesciunt, itaque adipisci earum
-          ducimus pariatur eaque labore.
+          <label for="email">Password</label>
+          <input
+            class="mt-3 border px-4 py-2"
+            type="password"
+            placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;"
+          />
+        </form>
+
+        <div class="mt-4 flex justify-between">
+          <form class="flex gap-2">
+            <input type="checkbox" name="" id="" />
+            <label for="checkbox">Remember me</label>
+          </form>
+          <a href="#" class="text-violet-900">Forgot password</a>
+        </div>
+
+        <button class="my-5 w-full bg-violet-900 py-2 text-white">LOGIN</button>
+
+        <p class="text-center text-gray-500">OR LOGIN WITH</p>
+
+        <div class="my-5 flex gap-2">
+          <button class="w-1/2 bg-blue-800 py-2 text-white">FACEBOOK</button>
+          <button class="w-1/2 bg-orange-500 py-2 text-white">GOOGLE</button>
+        </div>
+
+        <p class="text-center">
+          Don`t have account?
+          <a href="sign-up.html" class="text-violet-900">Register now</a>
         </p>
       </div>
-    </div>
-
-    <!-- /BG IMAGE  -->
-
-    <!-- Contact section  -->
-
-    <section
-      class="mx-auto my-6 grid max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10 lg:grid-cols-3 lg:pt-10"
-    >
-      <div>
-        <div class="border py-5 shadow-md">
-          <div class="flex justify-between px-4 pb-5">
-            <p class="text-xl font-bold">Delivery</p>
-          </div>
-
-          <div class="flex flex-col px-4">
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"
-                />
-                <path
-                  d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"
-                />
-              </svg>
-              maybell@delivery.org</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              +8(911)339-88-88</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3.43 2.524A41.29 41.29 0 0110 2c2.236 0 4.43.18 6.57.524 1.437.231 2.43 1.49 2.43 2.902v5.148c0 1.413-.993 2.67-2.43 2.902a41.202 41.202 0 01-5.183.501.78.78 0 00-.528.224l-3.579 3.58A.75.75 0 016 17.25v-3.443a41.033 41.033 0 01-2.57-.33C1.993 13.244 1 11.986 1 10.573V5.426c0-1.413.993-2.67 2.43-2.902z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              +8(911)339-88-88</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"
-                />
-              </svg>
-              @maybell</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="border py-5 shadow-md">
-          <div class="flex justify-between px-4 pb-5">
-            <p class="text-xl font-bold">Support</p>
-          </div>
-
-          <div class="flex flex-col px-4">
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"
-                />
-                <path
-                  d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"
-                />
-              </svg>
-              maybell@delivery.org</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              +8(911)339-88-88</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3.43 2.524A41.29 41.29 0 0110 2c2.236 0 4.43.18 6.57.524 1.437.231 2.43 1.49 2.43 2.902v5.148c0 1.413-.993 2.67-2.43 2.902a41.202 41.202 0 01-5.183.501.78.78 0 00-.528.224l-3.579 3.58A.75.75 0 016 17.25v-3.443a41.033 41.033 0 01-2.57-.33C1.993 13.244 1 11.986 1 10.573V5.426c0-1.413.993-2.67 2.43-2.902z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              +8(911)339-88-88</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"
-                />
-              </svg>
-              @maybell</a
-            >
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div class="border py-5 shadow-md">
-          <div class="flex justify-between px-4 pb-5">
-            <p class="text-xl font-bold">Careers</p>
-          </div>
-
-          <div class="flex flex-col px-4">
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"
-                />
-                <path
-                  d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"
-                />
-              </svg>
-              maybell@delivery.org</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              +8(911)339-88-88</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3.43 2.524A41.29 41.29 0 0110 2c2.236 0 4.43.18 6.57.524 1.437.231 2.43 1.49 2.43 2.902v5.148c0 1.413-.993 2.67-2.43 2.902a41.202 41.202 0 01-5.183.501.78.78 0 00-.528.224l-3.579 3.58A.75.75 0 016 17.25v-3.443a41.033 41.033 0 01-2.57-.33C1.993 13.244 1 11.986 1 10.573V5.426c0-1.413.993-2.67 2.43-2.902z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-              +8(911)339-88-88</a
-            >
-            <a class="flex items-center" href="#"
-              ><svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                class="mr-3 h-4 w-4 text-violet-900"
-              >
-                <path
-                  d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"
-                />
-              </svg>
-              @maybell</a
-            >
-          </div>
-        </div>
-      </div>
     </section>
-
-    <!-- Contact section  -->
-
-    <section class="mx-auto my-5 text-center">
-      <h2 class="text-3xl font-bold">Have another question?</h2>
-      <p>Complete the form below</p>
-    </section>
-
-    <!-- Form  -->
-
-    <form class="mx-auto my-5 max-w-[600px] px-5 pb-10" action="">
-      <div class="mx-auto">
-        <div class="my-3 flex w-full gap-2">
-          <input
-            class="w-1/2 border px-4 py-2"
-            type="text"
-            placeholder="E-mail"
-          />
-          <input
-            class="w-1/2 border px-4 py-2"
-            type="text"
-            placeholder="Full Name"
-          />
-        </div>
-      </div>
-
-      <select class="mb-3 w-full border px-4 py-2" name="pets" id="pet-select">
-        <option value="">Please choose a category</option>
-        <option value="delivery">Delivery</option>
-        <option value="support">Support</option>
-        <option value="profile">Profile</option>
-        <option value="careers">Careers</option>
-        <option value="another">Another category</option>
-      </select>
-
-      <textarea class="w-full border px-4 py-2" name="" id="">
-Write a commentary...</textarea
-      >
-
-      <div
-        class="lg:items:center container mt-4 flex flex-col justify-between lg:flex-row"
-      >
-        <div class="flex items-center">
-          <input class="mr-3" type="checkbox" name="" id="" />
-          <label for="checkbox">
-            I have read and agree with
-            <a href="#" class="text-violet-900">terms &amp; conditions</a>
-          </label>
-        </div>
-        <button class="my-3 bg-amber-400 px-4 py-2 lg:my-0">
-          Send Message
-        </button>
-      </div>
-    </form>
-
-    <!-- /Form  -->
+    <!-- /Login Card  -->
 
     <!-- Desktop Footer  -->
 
@@ -873,7 +627,7 @@ Write a commentary...</textarea
       <div class="ml-5">
         <img
           class="mt-10 mb-5"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
         <p class="pl-0">
@@ -957,7 +711,7 @@ Write a commentary...</textarea
       <div>
         <img
           class="mt-10"
-          src="/assets/images/company-logo-inverted.svg"
+          src="./assets/images/company-logo-inverted.svg"
           alt="company logo"
         />
         <p class="pl-0 text-center text-white">&copy; Bogdan Bulakh, 2023</p>
@@ -968,7 +722,7 @@ Write a commentary...</textarea
 
     <!-- Payment and copyright  -->
 
-    <section class="mb-0 h-11 bg-amber-400">
+    <section class="h-11 bg-amber-400">
       <div
         class="mx-auto flex max-w-[1200px] items-center justify-between px-4 pt-2"
       >
@@ -993,6 +747,6 @@ Write a commentary...</textarea
       </div>
     </section>
     <!-- /Payment and copyright  -->
-    <script type="text/javascript" src="/assets/dist/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>

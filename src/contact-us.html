@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- build:css -->
-    <link rel="stylesheet" href="/assets/dist/css/output.css" />
-    <!-- endbuild -->
+
+    <link rel="stylesheet" href="assets/css/tailwind-ecommerce.css" />
+
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -14,7 +14,7 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
-    <title>My Order History</title>
+    <title>Contact Us</title>
   </head>
 
   <body>
@@ -25,7 +25,7 @@
       <a href="index.html">
         <img
           class="cursor-pointer sm:h-auto sm:w-auto"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
       </a>
@@ -359,7 +359,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/bed.svg"
+                src="./assets/images/bed.svg"
                 alt="Bedroom icon"
               />
               Bedroom
@@ -387,7 +387,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sleep.svg"
+                src="./assets/images/sleep.svg"
                 alt="bedroom icon"
               />
               Matrass
@@ -415,7 +415,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/outdoor.svg"
+                src="./assets/images/outdoor.svg"
                 alt="bedroom icon"
               />
               Outdoor
@@ -443,7 +443,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sofa.svg"
+                src="./assets/images/sofa.svg"
                 alt="bedroom icon"
               />
               Sofa
@@ -471,7 +471,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/kitchen.svg"
+                src="./assets/images/kitchen.svg"
                 alt="bedroom icon"
               />
               Kitchen
@@ -499,7 +499,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/food.svg"
+                src="./assets/images/food.svg"
                 alt="Food icon"
               />
               Living room
@@ -570,418 +570,300 @@
     </section>
 
     <!-- /Menu  -->
-    <!-- breadcrumbs  -->
+    <!-- BG Image  -->
 
-    <nav class="mx-auto mt-4 max-w-[1200px] px-5">
-      <ul class="flex items-center">
-        <li class="cursor-pointer">
-          <a href="index.html">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="h-5 w-5"
-            >
-              <path
-                d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z"
-              />
-              <path
-                d="M12 5.432l8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.43z"
-              />
-            </svg>
-          </a>
-        </li>
-        <li>
-          <span class="mx-2 text-gray-500">&gt;</span>
-        </li>
+    <div class="relative">
+      <img
+        class="w-full object-cover brightness-50 filter lg:h-[500px]"
+        src="./assets/images/contact-bg.jpeg"
+        alt="Iphone with Macbook image"
+      />
 
-        <li class="text-gray-500">My Order History</li>
-      </ul>
-    </nav>
-    <!-- /breadcrumbs  -->
+      <div
+        class="absolute top-1/2 left-1/2 mx-auto flex w-11/12 max-w-[1200px] -translate-x-1/2 -translate-y-1/2 flex-col text-center text-white lg:ml-5"
+      >
+        <h1 class="text-4xl font-bold sm:text-5xl">Contact us</h1>
+        <p class="mx-auto pt-3 text-xs lg:w-3/5 lg:pt-5 lg:text-base">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur
+          aperiam natus, nulla, obcaecati nesciunt, itaque adipisci earum
+          ducimus pariatur eaque labore.
+        </p>
+      </div>
+    </div>
+
+    <!-- /BG IMAGE  -->
+
+    <!-- Contact section  -->
 
     <section
-      class="container mx-auto max-w-[1200px] border-b py-5 lg:flex lg:flex-row lg:py-10"
+      class="mx-auto my-6 grid max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10 lg:grid-cols-3 lg:pt-10"
     >
-      <!-- sidebar  -->
-      <section class="hidden w-[300px] flex-shrink-0 px-4 lg:block">
-        <div class="border-b py-5">
-          <div class="flex items-center">
-            <img
-              width="40px"
-              height="40px"
-              class="rounded-full object-cover"
-              src="/assets/images/avatar-photo.png"
-              alt="Red woman portrait"
-            />
-            <div class="ml-5">
-              <p class="font-medium text-gray-500">Hello,</p>
-              <p class="font-bold">Sarah Johnson</p>
-            </div>
+      <div>
+        <div class="border py-5 shadow-md">
+          <div class="flex justify-between px-4 pb-5">
+            <p class="text-xl font-bold">Delivery</p>
           </div>
-        </div>
 
-        <div class="flex border-b py-5">
-          <div class="w-full">
-            <div class="flex w-full">
-              <div class="flex flex-col gap-2">
-                <a
-                  href="account-page.html"
-                  class="flex items-center gap-2 font-medium"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-5 w-5"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M15 9h3.75M15 12h3.75M15 15h3.75M4.5 19.5h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5zm6-10.125a1.875 1.875 0 11-3.75 0 1.875 1.875 0 013.75 0zm1.294 6.336a6.721 6.721 0 01-3.17.789 6.721 6.721 0 01-3.168-.789 3.376 3.376 0 016.338 0z"
-                    />
-                  </svg>
-                  Manage account</a
-                >
-                <a
-                  href="profile-information.html"
-                  class="text-gray-500 duration-100 hover:text-yellow-400"
-                  >Profile information</a
-                >
-                <a
-                  href="manage-address.html"
-                  class="text-gray-500 duration-100 hover:text-yellow-400"
-                  >Manage Addresses</a
-                >
-                <a
-                  href="change-password.html"
-                  class="text-gray-500 duration-100 hover:text-yellow-400"
-                  >Change password</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex border-b py-5">
-          <div class="flex w-full">
-            <div class="flex flex-col gap-2">
-              <a
-                href="my-order-history.html"
-                class="flex items-center gap-2 font-medium text-violet-900"
+          <div class="flex flex-col px-4">
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                  class="h-5 w-5"
-                >
-                  <path
-                    d="M3.375 3C2.339 3 1.5 3.84 1.5 4.875v.75c0 1.036.84 1.875 1.875 1.875h17.25c1.035 0 1.875-.84 1.875-1.875v-.75C22.5 3.839 21.66 3 20.625 3H3.375z"
-                  />
-                  <path
-                    fill-rule="evenodd"
-                    d="M3.087 9l.54 9.176A3 3 0 006.62 21h10.757a3 3 0 002.995-2.824L20.913 9H3.087zm6.163 3.75A.75.75 0 0110 12h4a.75.75 0 010 1.5h-4a.75.75 0 01-.75-.75z"
-                    clip-rule="evenodd"
-                  />
-                </svg>
-
-                My Order History</a
+                <path
+                  d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"
+                />
+                <path
+                  d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"
+                />
+              </svg>
+              maybell@delivery.org</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
               >
-            </div>
-          </div>
-        </div>
-
-        <div class="flex border-b py-5">
-          <div class="flex w-full">
-            <div class="flex flex-col gap-2">
-              <a
-                href="payment-methods.html"
-                class="flex items-center gap-2 font-medium active:text-violet-900"
+                <path
+                  fill-rule="evenodd"
+                  d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              +8(911)339-88-88</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-5 w-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M2.25 8.25h19.5M2.25 9h19.5m-16.5 5.25h6m-6 2.25h3m-3.75 3h15a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 004.5 19.5z"
-                  />
-                </svg>
-
-                Payment Methods</a
+                <path
+                  fill-rule="evenodd"
+                  d="M3.43 2.524A41.29 41.29 0 0110 2c2.236 0 4.43.18 6.57.524 1.437.231 2.43 1.49 2.43 2.902v5.148c0 1.413-.993 2.67-2.43 2.902a41.202 41.202 0 01-5.183.501.78.78 0 00-.528.224l-3.579 3.58A.75.75 0 016 17.25v-3.443a41.033 41.033 0 01-2.57-.33C1.993 13.244 1 11.986 1 10.573V5.426c0-1.413.993-2.67 2.43-2.902z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              +8(911)339-88-88</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
               >
-            </div>
+                <path
+                  d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"
+                />
+              </svg>
+              @maybell</a
+            >
           </div>
         </div>
+      </div>
 
-        <div class="flex border-b py-5">
-          <div class="flex w-full">
-            <div class="flex flex-col gap-2">
-              <a
-                href="wishlist.html"
-                class="flex items-center gap-2 font-medium active:text-violet-900"
+      <div>
+        <div class="border py-5 shadow-md">
+          <div class="flex justify-between px-4 pb-5">
+            <p class="text-xl font-bold">Support</p>
+          </div>
+
+          <div class="flex flex-col px-4">
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-5 w-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
-                  />
-                </svg>
-
-                My Wishlist</a
+                <path
+                  d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"
+                />
+                <path
+                  d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"
+                />
+              </svg>
+              maybell@delivery.org</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
               >
-            </div>
-          </div>
-        </div>
-
-        <div class="flex py-5">
-          <div class="flex w-full">
-            <div class="flex flex-col gap-2">
-              <a
-                href="#"
-                class="flex items-center gap-2 font-medium active:text-violet-900"
+                <path
+                  fill-rule="evenodd"
+                  d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              +8(911)339-88-88</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
               >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="h-5 w-5"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
-                  />
-                </svg>
-
-                Log Out</a
+                <path
+                  fill-rule="evenodd"
+                  d="M3.43 2.524A41.29 41.29 0 0110 2c2.236 0 4.43.18 6.57.524 1.437.231 2.43 1.49 2.43 2.902v5.148c0 1.413-.993 2.67-2.43 2.902a41.202 41.202 0 01-5.183.501.78.78 0 00-.528.224l-3.579 3.58A.75.75 0 016 17.25v-3.443a41.033 41.033 0 01-2.57-.33C1.993 13.244 1 11.986 1 10.573V5.426c0-1.413.993-2.67 2.43-2.902z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              +8(911)339-88-88</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
               >
-            </div>
+                <path
+                  d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"
+                />
+              </svg>
+              @maybell</a
+            >
           </div>
         </div>
-      </section>
-      <!-- /sidebar  -->
+      </div>
 
-      <!-- Mobile order table  -->
-      <section
-        class="container mx-auto my-3 flex w-full flex-col gap-3 px-4 md:hidden"
-      >
-        <!-- 1 -->
+      <div>
+        <div class="border py-5 shadow-md">
+          <div class="flex justify-between px-4 pb-5">
+            <p class="text-xl font-bold">Careers</p>
+          </div>
 
-        <div class="flex w-full border px-4 py-4">
-          <div class="ml-3 flex w-full flex-col justify-center">
-            <div class="flex items-center justify-between">
-              <p class="text-xl font-bold">Order &numero; 1245</p>
-              <div class="border border-green-500 px-2 py-1 text-green-500">
-                Delivered
-              </div>
-            </div>
-            <p class="text-sm text-gray-400">22/06/2023</p>
-            <p class="py-3 text-xl font-bold text-violet-900">$620</p>
-            <div class="mt-2 flex w-full items-center justify-between">
-              <div class="flex items-center justify-center">
-                <a
-                  href="order-overview.html"
-                  class="flex cursor-text items-center justify-center bg-amber-500 px-2 py-2 active:ring-gray-500"
-                >
-                  View order
-                </a>
-              </div>
-            </div>
+          <div class="flex flex-col px-4">
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
+              >
+                <path
+                  d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z"
+                />
+                <path
+                  d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z"
+                />
+              </svg>
+              maybell@delivery.org</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M2 3.5A1.5 1.5 0 013.5 2h1.148a1.5 1.5 0 011.465 1.175l.716 3.223a1.5 1.5 0 01-1.052 1.767l-.933.267c-.41.117-.643.555-.48.95a11.542 11.542 0 006.254 6.254c.395.163.833-.07.95-.48l.267-.933a1.5 1.5 0 011.767-1.052l3.223.716A1.5 1.5 0 0118 15.352V16.5a1.5 1.5 0 01-1.5 1.5H15c-1.149 0-2.263-.15-3.326-.43A13.022 13.022 0 012.43 8.326 13.019 13.019 0 012 5V3.5z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              +8(911)339-88-88</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3.43 2.524A41.29 41.29 0 0110 2c2.236 0 4.43.18 6.57.524 1.437.231 2.43 1.49 2.43 2.902v5.148c0 1.413-.993 2.67-2.43 2.902a41.202 41.202 0 01-5.183.501.78.78 0 00-.528.224l-3.579 3.58A.75.75 0 016 17.25v-3.443a41.033 41.033 0 01-2.57-.33C1.993 13.244 1 11.986 1 10.573V5.426c0-1.413.993-2.67 2.43-2.902z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              +8(911)339-88-88</a
+            >
+            <a class="flex items-center" href="#"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                class="mr-3 h-4 w-4 text-violet-900"
+              >
+                <path
+                  d="M3.105 2.289a.75.75 0 00-.826.95l1.414 4.925A1.5 1.5 0 005.135 9.25h6.115a.75.75 0 010 1.5H5.135a1.5 1.5 0 00-1.442 1.086l-1.414 4.926a.75.75 0 00.826.95 28.896 28.896 0 0015.293-7.154.75.75 0 000-1.115A28.897 28.897 0 003.105 2.289z"
+                />
+              </svg>
+              @maybell</a
+            >
           </div>
         </div>
-
-        <!-- 2 -->
-
-        <div class="flex w-full border px-4 py-4">
-          <div class="ml-3 flex w-full flex-col justify-center">
-            <div class="flex items-center justify-between">
-              <p class="text-xl font-bold">Order &numero; 1232</p>
-              <div class="border border-orange-500 px-2 py-1 text-orange-500">
-                Progress
-              </div>
-            </div>
-            <p class="text-sm text-gray-400">20/05/2023</p>
-            <p class="py-3 text-xl font-bold text-violet-900">$320</p>
-            <div class="mt-2 flex w-full items-center justify-between">
-              <div class="flex items-center justify-center">
-                <a
-                  href="order-overview.html"
-                  class="flex cursor-text items-center justify-center bg-amber-500 px-2 py-2 active:ring-gray-500"
-                >
-                  View order
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 3 -->
-
-        <div class="flex w-full border px-4 py-4">
-          <div class="ml-3 flex w-full flex-col justify-center">
-            <div class="flex items-center justify-between">
-              <p class="text-xl font-bold">Order &numero; 3246</p>
-              <div class="border border-red-500 px-2 py-1 text-red-500">
-                Declined
-              </div>
-            </div>
-            <p class="text-sm text-gray-400">03/03/2022</p>
-            <p class="py-3 text-xl font-bold text-violet-900">$2500</p>
-            <div class="mt-2 flex w-full items-center justify-between">
-              <div class="flex items-center justify-center">
-                <a
-                  href="order-overview.html"
-                  class="flex cursor-text items-center justify-center bg-amber-500 px-2 py-2 active:ring-gray-500"
-                >
-                  View order
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- 4 -->
-
-        <div class="flex w-full border px-4 py-4">
-          <div class="ml-3 flex w-full flex-col justify-center">
-            <div class="flex items-center justify-between">
-              <p class="text-xl font-bold">Order &numero; 9827</p>
-              <div class="border border-blue-500 px-2 py-1 text-blue-500">
-                Need Payment
-              </div>
-            </div>
-            <p class="text-sm text-gray-400">31/01/20</p>
-            <p class="py-3 text-xl font-bold text-violet-900">$1700</p>
-            <div class="mt-2 flex w-full items-center justify-between">
-              <div class="flex items-center justify-center">
-                <a
-                  href="order-overview.html"
-                  class="flex cursor-text items-center justify-center bg-amber-500 px-2 py-2 active:ring-gray-500"
-                >
-                  View order
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- /Mobile order table  -->
-
-      <!-- Order table  -->
-      <section
-        class="hidden h-[600px] w-full max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10 lg:grid"
-      >
-        <table class="table-fixed">
-          <thead class="h-16 bg-neutral-100">
-            <tr>
-              <th>ORDER</th>
-              <th>DATE</th>
-              <th>TOTAL</th>
-              <th>STATUS</th>
-              <th>ACTION</th>
-            </tr>
-          </thead>
-          <tbody>
-            <!-- 1 -->
-
-            <tr class="h-[100px] border-b">
-              <td class="text-center align-middle">&#8470; 1245</td>
-              <td class="mx-auto text-center">22/06/2023</td>
-              <td class="text-center align-middle">&#36;620</td>
-
-              <td class="mx-auto text-center">
-                <span class="border-2 border-green-500 py-1 px-3 text-green-500"
-                  >Delivered</span
-                >
-              </td>
-              <td class="text-center align-middle">
-                <a href="order-overview.html" class="bg-amber-400 px-4 py-2"
-                  ><button class="text-center">View</button></a
-                >
-              </td>
-            </tr>
-
-            <!-- 2 -->
-
-            <tr class="h-[100px] border-b">
-              <td class="text-center align-middle">&#8470; 1232</td>
-              <td class="mx-auto text-center">20/05/2023</td>
-              <td class="text-center align-middle">&#36;3200</td>
-
-              <td class="mx-auto text-center">
-                <span
-                  class="border-2 border-orange-500 py-1 px-3 text-orange-500"
-                  >In Progress</span
-                >
-              </td>
-              <td class="text-center align-middle">
-                <a href="order-overview.html" class="bg-amber-400 px-4 py-2"
-                  ><button class="text-center">View</button></a
-                >
-              </td>
-            </tr>
-
-            <!-- 3 -->
-
-            <tr class="h-[100px] border-b">
-              <td class="text-center align-middle">&#8470; 3246</td>
-              <td class="mx-auto text-center">03/03/2022</td>
-              <td class="text-center align-middle">&#36;2500</td>
-
-              <td class="mx-auto text-center">
-                <span class="border-2 border-red-500 py-1 px-3 text-red-500"
-                  >Declined</span
-                >
-              </td>
-              <td class="text-center align-middle">
-                <a href="order-overview.html" class="bg-amber-400 px-4 py-2"
-                  ><button class="text-center">View</button></a
-                >
-              </td>
-            </tr>
-
-            <!-- 4 -->
-
-            <tr class="h-[100px] border-b">
-              <td class="text-center align-middle">&#8470; 9827</td>
-              <td class="mx-auto text-center">31/01/2020</td>
-              <td class="text-center align-middle">&#36;1700</td>
-
-              <td class="mx-auto text-center">
-                <span class="border-2 border-blue-500 py-1 px-3 text-blue-500"
-                  >Need Payment</span
-                >
-              </td>
-              <td class="text-center align-middle">
-                <a href="order-overview.html" class="bg-amber-400 px-4 py-2"
-                  ><button class="text-center">View</button></a
-                >
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <!-- /Order table  -->
+      </div>
     </section>
+
+    <!-- Contact section  -->
+
+    <section class="mx-auto my-5 text-center">
+      <h2 class="text-3xl font-bold">Have another question?</h2>
+      <p>Complete the form below</p>
+    </section>
+
+    <!-- Form  -->
+
+    <form class="mx-auto my-5 max-w-[600px] px-5 pb-10" action="">
+      <div class="mx-auto">
+        <div class="my-3 flex w-full gap-2">
+          <input
+            class="w-1/2 border px-4 py-2"
+            type="text"
+            placeholder="E-mail"
+          />
+          <input
+            class="w-1/2 border px-4 py-2"
+            type="text"
+            placeholder="Full Name"
+          />
+        </div>
+      </div>
+
+      <select class="mb-3 w-full border px-4 py-2" name="pets" id="pet-select">
+        <option value="">Please choose a category</option>
+        <option value="delivery">Delivery</option>
+        <option value="support">Support</option>
+        <option value="profile">Profile</option>
+        <option value="careers">Careers</option>
+        <option value="another">Another category</option>
+      </select>
+
+      <textarea class="w-full border px-4 py-2" name="" id="">
+Write a commentary...</textarea
+      >
+
+      <div
+        class="lg:items:center container mt-4 flex flex-col justify-between lg:flex-row"
+      >
+        <div class="flex items-center">
+          <input class="mr-3" type="checkbox" name="" id="" />
+          <label for="checkbox">
+            I have read and agree with
+            <a href="#" class="text-violet-900">terms &amp; conditions</a>
+          </label>
+        </div>
+        <button class="my-3 bg-amber-400 px-4 py-2 lg:my-0">
+          Send Message
+        </button>
+      </div>
+    </form>
+
+    <!-- /Form  -->
 
     <!-- Desktop Footer  -->
 
@@ -991,7 +873,7 @@
       <div class="ml-5">
         <img
           class="mt-10 mb-5"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
         <p class="pl-0">
@@ -1070,12 +952,12 @@
     <!-- Mobile Footer  -->
 
     <footer
-      class="mx-auto flex w-full max-w-[1200px] justify-center bg-violet-900 pb-10 md:hidden"
+      class="mx-auto mt-10 flex w-full max-w-[1200px] justify-center bg-violet-900 pb-10 md:hidden"
     >
       <div>
         <img
           class="mt-10"
-          src="/assets/images/company-logo-inverted.svg"
+          src="./assets/images/company-logo-inverted.svg"
           alt="company logo"
         />
         <p class="pl-0 text-center text-white">&copy; Bogdan Bulakh, 2023</p>
@@ -1086,7 +968,7 @@
 
     <!-- Payment and copyright  -->
 
-    <section class="h-11 bg-amber-400">
+    <section class="mb-0 h-11 bg-amber-400">
       <div
         class="mx-auto flex max-w-[1200px] items-center justify-between px-4 pt-2"
       >
@@ -1111,6 +993,6 @@
       </div>
     </section>
     <!-- /Payment and copyright  -->
-    <script type="text/javascript" src="/assets/dist/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>

@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- build:css -->
-    <link rel="stylesheet" href="/assets/dist/css/output.css" />
-    <!-- endbuild -->
+
+    <link rel="stylesheet" href="assets/css/tailwind-ecommerce.css" />
+
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -25,7 +25,7 @@
       <a href="index.html">
         <img
           class="cursor-pointer sm:h-auto sm:w-auto"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
       </a>
@@ -345,11 +345,7 @@
     <!-- /Nav bar -->
 
     <!-- Menu  -->
-    <section
-      id="menu"
-      onclick="menuToggle"
-      class="absolute left-0 right-0 z-10 hidden w-full border-b border-r border-l bg-white"
-    >
+    <section class="absolute left-0 right-0 z-10 hidden w-full bg-white">
       <div class="mx-auto flex max-w-[1200px] py-10">
         <div class="w-[300px] border-r">
           <ul class="px-5">
@@ -359,7 +355,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/bed.svg"
+                src="./assets/images/bed.svg"
                 alt="Bedroom icon"
               />
               Bedroom
@@ -387,7 +383,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sleep.svg"
+                src="./assets/images/sleep.svg"
                 alt="bedroom icon"
               />
               Matrass
@@ -415,7 +411,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/outdoor.svg"
+                src="./assets/images/outdoor.svg"
                 alt="bedroom icon"
               />
               Outdoor
@@ -443,7 +439,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/sofa.svg"
+                src="./assets/images/sofa.svg"
                 alt="bedroom icon"
               />
               Sofa
@@ -471,7 +467,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/kitchen.svg"
+                src="./assets/images/kitchen.svg"
                 alt="bedroom icon"
               />
               Kitchen
@@ -499,7 +495,7 @@
               <img
                 width="15px"
                 height="15px"
-                src="../assets/images/food.svg"
+                src="./assets/images/food.svg"
                 alt="Food icon"
               />
               Living room
@@ -570,6 +566,7 @@
     </section>
 
     <!-- /Menu  -->
+
     <!-- breadcrumbs  -->
 
     <nav class="mx-auto mt-4 max-w-[1200px] px-5">
@@ -600,38 +597,161 @@
     </nav>
     <!-- /breadcrumbs  -->
 
-    <section class="mt-20 px-4">
-      <div class="flex flex-col">
-        <p class="text-center text-3xl font-bold">We Accepted your order!</p>
-        <div class="text-center">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="mx-auto my-3 h-[60px] w-[60px] text-green-500"
+    <section
+      class="container mx-auto max-w-[1200px] py-5 lg:flex lg:flex-row lg:py-10"
+    >
+      <h2 class="mx-auto px-5 text-2xl font-bold md:hidden">Payment Method</h2>
+      <!-- form  -->
+      <section class="grid w-full max-w-[1200px] grid-cols-1 gap-3 px-5 pb-10">
+        <table class="hidden lg:table">
+          <thead class="h-16 bg-neutral-100">
+            <tr>
+              <th>ADDRESS</th>
+              <th>DELIVERY METHOD</th>
+              <th class="bg-neutral-600 text-white">PAYMENT METHOD</th>
+              <th>ORDER REVIEW</th>
+            </tr>
+          </thead>
+        </table>
+
+        <div class="py-5">
+          <form class="flex w-full flex-col gap-3" action="">
+            <div class="flex w-full flex-col">
+              <label class="flex" for="name">Payment Card Number</label>
+              <input
+                class="w-full border px-4 py-2 lg:w-1/2"
+                type="text"
+                placeholder="1223 4568 7644 4839"
+              />
+            </div>
+
+            <div class="flex w-full flex-col">
+              <label class="flex" for="name">Card Holder</label>
+              <input
+                class="w-full border px-4 py-2 lg:w-1/2"
+                type="text"
+                placeholder="SARAH JOHNSON"
+              />
+            </div>
+
+            <div class="flex items-center gap-5 lg:w-1/2">
+              <div class="flex flex-col">
+                <label class="flex" for="name">Expiry Date</label>
+
+                <div class="flex w-[150px] items-center gap-1">
+                  <input
+                    class="w-1/2 border px-4 py-2 text-center"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="10"
+                  />
+
+                  <span>&bsol;</span>
+
+                  <input
+                    class="w-1/2 border px-4 py-2 text-center"
+                    type="text"
+                    name=""
+                    id=""
+                    placeholder="36"
+                  />
+                </div>
+              </div>
+
+              <div class="flex flex-col">
+                <label class="flex" for="">CVV/CVC</label>
+                <input
+                  class="w-full border py-2 text-center lg:w-1/2"
+                  type="password"
+                  placeholder="&bull;&bull;&bull;"
+                />
+              </div>
+            </div>
+
+            <!-- another payment-methods -->
+
+            <h2 class="mt-10 text-left text-xl font-medium">
+              Another methods:
+            </h2>
+            <section class="my-4 grid w-fit grid-cols-3 gap-4 lg:grid-cols-5">
+              <img
+                class="w-[100px] cursor-pointer"
+                src="./assets/images/payment-method-bitcoin.svg"
+                alt="bitcoin icon"
+              />
+              <img
+                class="w-[100px] cursor-pointer"
+                src="./assets/images/payment-method-paypal.svg"
+                alt="paypal icon"
+              />
+              <img
+                class="w-[100px] cursor-pointer"
+                src="./assets/images/payment-method-stripe.svg"
+                alt="stripe icon"
+              />
+              <img
+                class="w-[100px] cursor-pointer"
+                src="./assets/images/payment-method-visa.svg"
+                alt="visa icon"
+              />
+              <img
+                class="w-[100px] cursor-pointer"
+                src="./assets/images/payment-method-mastercard.svg"
+                alt="mastercard icon"
+              />
+            </section>
+            <!-- another payment-methods -->
+          </form>
+        </div>
+
+        <div class="flex w-full items-center justify-between">
+          <a href="catalog.html" class="hidden text-sm text-violet-900 lg:block"
+            >&larr; Back to the shop</a
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043A3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"
-            />
-          </svg>
 
-          <p>Thank you, <span class="font-bold">Sarah Johnson!</span></p>
-          <p>You can check your order status on your orders list!</p>
-
-          <div class="mt-10">
+          <div class="mx-auto flex justify-center gap-2 lg:mx-0">
             <a
-              href="my-order-history.html"
-              class="mx-auto bg-amber-400 px-4 py-2"
-              >My Orders history</a
+              href="checkout-delivery.html"
+              class="bg-purple-900 px-4 py-2 text-white"
+              >Previous step</a
+            >
+
+            <a href="checkout-review.html" class="bg-amber-400 px-4 py-2"
+              >Checkout review</a
             >
           </div>
         </div>
-      </div>
+      </section>
+      <!-- /form  -->
+
+      <!-- Summary  -->
+
+      <section class="mx-auto w-full px-4 md:max-w-[400px]">
+        <div class="">
+          <div class="border py-5 px-4 shadow-md">
+            <p class="font-bold">ORDER SUMMARY</p>
+
+            <div class="flex justify-between border-b py-5">
+              <p>Subtotal</p>
+              <p>$1280</p>
+            </div>
+
+            <div class="flex justify-between border-b py-5">
+              <p>Shipping</p>
+              <p>Free</p>
+            </div>
+
+            <div class="flex justify-between py-5">
+              <p>Total</p>
+              <p>$1280</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </section>
+
+    <!-- /Summary -->
 
     <!-- Cons bages -->
 
@@ -739,7 +859,7 @@
       <div class="ml-5">
         <img
           class="mt-10 mb-5"
-          src="/assets/images/company-logo.svg"
+          src="./assets/images/company-logo.svg"
           alt="company logo"
         />
         <p class="pl-0">
@@ -823,7 +943,7 @@
       <div>
         <img
           class="mt-10"
-          src="/assets/images/company-logo-inverted.svg"
+          src="./assets/images/company-logo-inverted.svg"
           alt="company logo"
         />
         <p class="pl-0 text-center text-white">&copy; Bogdan Bulakh, 2023</p>
@@ -859,6 +979,6 @@
       </div>
     </section>
     <!-- /Payment and copyright  -->
-    <script type="text/javascript" src="/assets/dist/js/script.js"></script>
+    <script type="module" src="assets/js/script.js"></script>
   </body>
 </html>
