@@ -17,7 +17,7 @@
     <title>About Us</title>
   </head>
 
-  <body>
+  <body x-data="{ desktopMenuOpen: false, mobileMenuOpen: false}">
     <!-- Header -->
     <header
       class="mx-auto flex h-16 max-w-[1200px] items-center justify-between px-5"
@@ -31,7 +31,7 @@
       </a>
 
       <div class="md:hidden">
-        <button id="burgerButton">
+        <button @click="mobileMenuOpen = ! mobileMenuOpen">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -155,9 +155,9 @@
 
     <!-- Burger menu  -->
     <section
-      id="burgerMenu"
-      onclick="menuToggle"
-      class="absolute left-0 right-0 z-50 hidden h-screen w-full bg-white"
+      x-show="mobileMenuOpen" @click.outside="mobileMenuOpen = false"
+      class="absolute left-0 right-0 z-50 h-screen w-full bg-white"
+      style="display: none;"
     >
       <div class="mx-auto">
         <div class="mx-auto flex w-full justify-center gap-3 py-4">
@@ -279,8 +279,8 @@
         class="mx-auto hidden h-12 w-full max-w-[1200px] items-center md:flex"
       >
         <button
-          id="menuButton"
-          class="ml-5 flex h-full w-40 cursor-pointer items-center justify-center bg-yellow-500"
+          @click="desktopMenuOpen = ! desktopMenuOpen"
+          class="ml-5 flex h-full w-40 cursor-pointer items-center justify-center bg-amber-400"
         >
           <div class="flex justify-around" href="#">
             <svg
@@ -343,9 +343,13 @@
       </div>
     </nav>
     <!-- /Nav bar -->
-
+ 
     <!-- Menu  -->
-    <section class="absolute left-0 right-0 z-10 hidden w-full bg-white">
+    <section
+      x-show="desktopMenuOpen" @click.outside="desktopMenuOpen = false"
+      class="absolute left-0 right-0 z-10 w-full border-b border-r border-l bg-white"
+      style="display: none;"
+    >
       <div class="mx-auto flex max-w-[1200px] py-10">
         <div class="w-[300px] border-r">
           <ul class="px-5">

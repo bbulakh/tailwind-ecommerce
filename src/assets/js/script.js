@@ -1,6 +1,12 @@
 import '@splidejs/splide/dist/css/splide.min.css';
-import { Splide } from '@splidejs/splide';
+import Splide from '@splidejs/splide';
+import Alpine from 'alpinejs';
+ 
+// Start AlpineJS
+window.Alpine = Alpine;
+Alpine.start();
 
+// Start Splide
 if (document.querySelector('.splide')) {
   let splide = new Splide(".splide", {
     type: "loop",
@@ -19,17 +25,3 @@ if (document.querySelector('.splide')) {
 
   splide.mount();
 }
-
-// Navigation
-document.addEventListener("DOMContentLoaded", function (event) {
-  let menuButton = document.getElementById("menuButton");
-  let menu = document.getElementById("menu");
-  let burgerButton = document.getElementById("burgerButton");
-  let burgerMenu = document.getElementById("burgerMenu");
-
-  menuButton.addEventListener("click", () => menu.classList.toggle("hidden"));
-
-  burgerButton.addEventListener("click", () =>
-    burgerMenu.classList.toggle("hidden")
-  );
-});
