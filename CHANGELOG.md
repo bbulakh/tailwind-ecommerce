@@ -1,6 +1,6 @@
-# Release Notes for 1.x
+# Release Notes for 2.x
 
-<a name="1.0.0"></a>
-# [1.0.0](https://github.com/bbulakh/tailwind-ecommerce) (2023-05-05)
-* Initial Release
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/bbulakh/tailwind-ecommerce) (2023-06-xx)
+
 
