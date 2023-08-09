@@ -15,6 +15,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
   <meta name="msapplication-TileColor" content="#ffc40d" />
   <meta name="theme-color" content="#ffffff" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/mask@3.x.x/dist/cdn.min.js"></script>
   <title>Checkout</title>
 </head>
 
@@ -348,7 +349,7 @@
         <form class="flex w-full flex-col gap-3" action="">
           <div class="flex w-full flex-col">
             <label class="flex" for="name">Payment Card Number</label>
-            <input class="w-full border px-4 py-2 lg:w-1/2" type="number" placeholder="1223 4568 7644 4839" />
+            <input x-mask="9999 9999 9999 9999" class="w-full border px-4 py-2 lg:w-1/2" placeholder="1223 4568 7644 4839" />
           </div>
 
           <div class="flex w-full flex-col">
@@ -361,7 +362,7 @@
               <label class="flex" for="name">Expiry Date</label>
 
               <div class="flex w-[150px] items-center gap-1">
-                <input class="w-1/2 border px-4 py-2 text-center" type="nu]" name="" id="" placeholder="10" />
+                <input class="w-1/2 border px-4 py-2 text-center" type="number" name="" id="" placeholder="10" />
 
                 <span>&bsol;</span>
 
@@ -371,7 +372,7 @@
 
             <div class="flex flex-col">
               <label class="flex" for="">CVV/CVC</label>
-              <input class="w-full border py-2 text-center lg:w-1/2" type="password" placeholder="&bull;&bull;&bull;" />
+              <input x-mask="999" class="w-full border py-2 text-center lg:w-1/2" type="password" placeholder="&bull;&bull;&bull;" />
             </div>
           </div>
 
@@ -573,33 +574,19 @@
 
   <!-- /Mobile Footer  -->
 
- <!-- Payment and copyright  -->
+  <!-- Payment and copyright  -->
 
- <section class="h-11 bg-amber-400">
-  <div
-    class="mx-auto flex max-w-[1200px] items-center justify-between px-4 pt-2"
-  >
-    <p>&copy; Bogdan Bulakh, 2023</p>
-    <div class="flex items-center space-x-3">
-      <img
-        class="h-8"
-        src="https://cdn-icons-png.flaticon.com/512/5968/5968299.png"
-        alt="Visa icon"
-      />
-      <img
-        class="h-8"
-        src="https://cdn-icons-png.flaticon.com/512/349/349228.png"
-        alt="AE icon"
-      />
-      <img
-        class="h-8"
-        src="https://cdn-icons-png.flaticon.com/512/5968/5968144.png"
-        alt="Apple pay icon"
-      />
+  <section class="h-11 bg-amber-400">
+    <div class="mx-auto flex max-w-[1200px] items-center justify-between px-4 pt-2">
+      <p>&copy; Bogdan Bulakh, 2023</p>
+      <div class="flex items-center space-x-3">
+        <img class="h-8" src="https://cdn-icons-png.flaticon.com/512/5968/5968299.png" alt="Visa icon" />
+        <img class="h-8" src="https://cdn-icons-png.flaticon.com/512/349/349228.png" alt="AE icon" />
+        <img class="h-8" src="https://cdn-icons-png.flaticon.com/512/5968/5968144.png" alt="Apple pay icon" />
+      </div>
     </div>
-  </div>
-</section>
-<!-- /Payment and copyright  -->
+  </section>
+  <!-- /Payment and copyright  -->
   <script type="module" src="assets/js/script.js"></script>
 </body>
 

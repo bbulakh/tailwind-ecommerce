@@ -15,6 +15,7 @@
   <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
   <meta name="msapplication-TileColor" content="#ffc40d" />
   <meta name="theme-color" content="#ffffff" />
+  <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/mask@3.x.x/dist/cdn.min.js"></script>
   <title>Payment Methods</title>
 </head>
 
@@ -436,7 +437,7 @@
         <form class="flex w-full flex-col gap-3" action="">
           <div class="flex w-full flex-col">
             <label class="flex" for="name">Payment Card Number</label>
-            <input class="w-full border px-4 py-2 lg:w-1/2" type="number" placeholder="1223 4568 7644 4839" />
+            <input x-mask="9999 9999 9999 9999" class="w-full border px-4 py-2 lg:w-1/2" type="text" placeholder="1223 4568 7644 4839" />
           </div>
 
           <div class="flex w-full flex-col">
@@ -459,7 +460,7 @@
 
             <div class="flex flex-col">
               <label class="flex" for="">CVV/CVC</label>
-              <input class="w-full border py-2 text-center lg:w-1/2" type="number" placeholder="&bull;&bull;&bull;" />
+              <input x-mask="999" class="w-full border py-2 text-center lg:w-1/2" type="password" placeholder="&bull;&bull;&bull;" />
             </div>
           </div>
 
