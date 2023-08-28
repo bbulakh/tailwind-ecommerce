@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="assets/css/tailwind-ecommerce.css" />
 
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
@@ -14,6 +13,10 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/mask@3.x.x/dist/cdn.min.js"
+    ></script>
     <title>Manage Addresses</title>
   </head>
 
@@ -833,8 +836,8 @@
               <div class="flex flex-col">
                 <label for="">Zip Code</label>
                 <input
+                  x-mask="999999"
                   class="w-full border px-4 py-2 lg:w-1/2"
-                  type="number"
                   placeholder="240116"
                 />
               </div>

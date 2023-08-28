@@ -14,6 +14,10 @@
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
     <meta name="theme-color" content="#ffffff" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/mask@3.x.x/dist/cdn.min.js"
+    ></script>
     <title>Checkout</title>
   </head>
 
@@ -709,6 +713,7 @@
                       ></span
                     ></label>
                     <input
+                      x-mask="999999"
                       class="w-full border px-4 py-2 outline-yellow-400"
                       type="number"
                       placeholder="176356"
