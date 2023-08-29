@@ -4,15 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link rel="stylesheet" href="assets/css/tailwind-ecommerce.css" />
-
     <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#207891" />
     <meta name="msapplication-TileColor" content="#ffc40d" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@alpinejs/mask@3.x.x/dist/cdn.min.js"
+    ></script>
     <meta name="theme-color" content="#ffffff" />
     <title>Catalog</title>
   </head>
@@ -721,15 +723,15 @@
               <div class="flex w-full">
                 <div class="flex justify-between">
                   <input
+                    x-mask="99999"
                     class="h-8 w-[90px] border pl-2"
-                    type="number"
-                    placeholder="min"
+                    placeholder="50"
                   />
                   <span class="px-3">-</span>
                   <input
+                    x-mask="999999"
                     class="h-8 w-[90px] border pl-2"
-                    type="number"
-                    placeholder="max"
+                    placeholder="99999"
                   />
                 </div>
               </div>
