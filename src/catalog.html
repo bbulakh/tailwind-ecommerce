@@ -724,12 +724,16 @@
                 <div class="flex justify-between">
                   <input
                     x-mask="99999"
+                    min="50"
+                    type="number"
                     class="h-8 w-[90px] border pl-2"
                     placeholder="50"
                   />
                   <span class="px-3">-</span>
                   <input
                     x-mask="999999"
+                    type="number"
+                    max="999999"
                     class="h-8 w-[90px] border pl-2"
                     placeholder="99999"
                   />
