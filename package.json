@@ -5,16 +5,18 @@
   "homepage": "https://github.com/bbulakh/tailwind-ecommerce",
   "author": "Bogdan Bulakh",
   "license": "MIT",
-  "source": "src/index.html",
-  "scripts": {
-    "start": "parcel",
-    "build": "parcel build;"
+  "type": "module",
+  "packageManager": "pnpm@12.15.0",
+  "engines": {
+    "node": ">=22.23.4",
+    "pnpm": ">=12.15.0"
   },
-  "browserslist": "last 2 versions",
-  "targets": {
-    "default": {
-      "distDir": "./build/"
-    }
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "astro check"
   },
   "keywords": [
     "layouts",
@@ -27,12 +29,15 @@
     "url": "https://github.com/bbulakh/tailwind-ecommerce/issues"
   },
   "dependencies": {
-    "@parcel/packager-raw-url": "^2.8.3",
-    "@parcel/transformer-webmanifest": "^2.8.3",
+    "@alpinejs/mask": "^3.12.1",
     "@splidejs/splide": "^4.1.4",
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "alpinejs": "^3.12.1",
-    "parcel": "^2.8.3",
-    "tailwindcss": "^3.3.2"
+    "alpinejs": "^3.12.1"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@tailwindcss/vite": "^4.3.5",
+    "astro": "^7.4.11",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^6.0.3"
   }
 }

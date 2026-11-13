@@ -1,14 +1,16 @@
 import '@splidejs/splide/dist/css/splide.min.css';
 import Splide from '@splidejs/splide';
 import Alpine from 'alpinejs';
+import mask from '@alpinejs/mask';
  
 // Start AlpineJS
 window.Alpine = Alpine;
+Alpine.plugin(mask);
 Alpine.start();
 
 // Start Splide
-if (document.querySelector('.splide')) {
-  let splide = new Splide(".splide", {
+document.querySelectorAll('.splide').forEach((element) => {
+  const splide = new Splide(element, {
     type: "loop",
     focus: 0,
     gap: "1rem",
@@ -24,4 +26,4 @@ if (document.querySelector('.splide')) {
   });
 
   splide.mount();
-}
+});

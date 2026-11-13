@@ -1,3 +1,21 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Preserve the border and button defaults used by the Tailwind 3 templates. */
+@layer base {
+  *,
+  ::before,
+  ::after,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentColor);
+  }
+
+  button,
+  [role="button"] {
+    cursor: pointer;
+  }
+}
+
+[x-cloak] {
+  display: none !important;
+}
